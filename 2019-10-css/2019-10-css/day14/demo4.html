@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    ul,ol{
+        list-style: none;
+    }
+    .wrapper{
+        width:100px;
+        height:100px;
+        background:#fff;
+        border:1px solid darkcyan;
+        margin:100px;
+        display:flex;
+        /* 把垂直方向上的轴定义为主轴 */
+        flex-direction: column;
+        justify-content: space-between;
+        padding:10px;
+        
+    }
+    .item{
+        width:20px;
+        height:20px;
+        background:darkcyan;
+        border-radius:50%;
+    }
+
+    .wrapper>div{
+        display:flex;
+        justify-content: space-between;
+    }
+   
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="r1">
+           <div class="item"></div>
+           <div class="item"></div>
+        </div>
+        <div class="r2">
+                <div class="item"></div>
+                <div class="item"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+.md{
+    width:1226px;
+    margin:0 auto;
+}
+.bannerBox{
+    height: 460px;
+    background:gold;
+    position:relative;
+}
+
+.bannerLists a{
+    width:100%;
+    height:460px;
+    display:block;
+    background:url("../images/libg.jpg") center center no-repeat;
+    background-size:cover;
+}
+/* 侧边栏 */
+
+.bannerBar{
+   width:234px;
+   height:460px;
+   padding:20px 0 20px 0;
+   box-sizing: border-box;
+   background:rgba(105,101,101,0.6);
+   position:absolute;
+   left:0;
+   top:0;
+}
+
+.bannerBar>li{
+    height:42px;
+    line-height: 42px;
+    font-size:14px;
+    text-indent: 30px;
+    background:url("../images/arrow.png") no-repeat;
+    background-position:200px center;
+    /* position:relative; */
+    
+}
+.bannerBar>li:hover{
+    background-color:darkorange;
+}
+.bannerBar>li>a{
+    color:#fff;
+    height:42px;
+    line-height: 42px;
+    display:block;
+}
+
+.contBox{
+    width:500px;
+    height:460px;
+    background:lightblue;
+    position:absolute;
+    left:234px;
+    top:0px;
+    display:none;
+}
+
+.bannerBar>li:hover .contBox{
+    display:block;
+}
+
+.leftArrow,.rightArrow{
+    width:41px;
+    height:69px;
+    background:url("../images/icon-slides.png");
+    position:absolute;
+    top:50%;
+    margin-top:-35px;
+}
+.leftArrow{
+    left:234px;
+    background-position:-83px 0;
+   
+}
+.leftArrow:hover{
+    background-position:0px 0;
+}
+
+.rightArrow{
+    right:0;
+    background-position:-125px 0;
+}
+.rightArrow:hover{
+    background-position:-42px 0;
+}

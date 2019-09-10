@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        function refreshRem() {
+        var desW = 640,
+            winW = document.documentElement.clientWidth||document.body.clientWidth;
+            ratio = winW / desW;
+        document.documentElement.style.fontSize = ratio * 100 + 'px';
+    }
+    refreshRem();
+    window.addEventListener('resize', refreshRem);
+    </script>
+</head>
+<body>
+    <!-- 标头 -->
+    <header class="clearfix">
+        <a class="logo" href=""></a>
+        <a href="" class="list"></a>
+    </header>
+    <!-- 轮播 -->
+    <div class="banner">
+        <img src="images/Layer 35.png" alt="" class="word">
+        <img src="images/Layer 34.png" alt="" class="wechat">
+        <img src="images/word2.png" alt="" class="word2">
+        <img src="images/word3.png" alt="" class="word3">
+        <ul>
+            <li>
+                <a href=""></a>
+            </li>
+            <li>
+                <a href=""></a>
+            </li>
+            <li>
+                <a href=""></a>
+            </li>
+            <li>
+                <a href=""></a>
+            </li>
+        </ul>
+    </div>
+    <!-- 课程 -->
+    <div class="classBox">
+        <a href="" class="logo"></a>
+        <div class="part1">
+            <a href="">
+            </a>
+        </div>
+        <div class="titleBox">
+            <a href="" class="title">Vue.js从理论精讲到项目实战课程</a>
+            <a href="" class="price">￥5000.00元</a>
+        </div>
+        <div class="part2">
+            <a href="" class="node"></a>
+        </div>
+        <div class="title2Box">
+                <a href="" class="title">Vue.js从理论精讲到项目实战课程</a>
+                <a href="" class="price">￥5000.00元</a>
+        </div>
+        <div class="part3">
+            <a href=""></a>
+        </div>
+        <div class="title3Box">
+                <a href="" class="title">Vue.js从理论精讲到项目实战课程</a>
+                <a href="" class="price">￥5000.00元</a>
+        </div>
+        <div class="part4">
+            <a href=""></a>
+        </div>
+        <div class="title4Box">
+                <a href="" class="title">Vue.js从理论精讲到项目实战课程</a>
+                <a href="" class="price">￥5000.00元</a>
+        </div>
+        <div class="part5">
+            <a href=""></a>
+        </div>
+        <div class="title5Box">
+                <a href="" class="title">Vue.js从理论精讲到项目实战课程</a>
+                <a href="" class="price">￥5000.00元</a>
+        </div>
+        <div class="part6">
+            <a href=""></a>
+        </div>
+        <div class="title6Box">
+                <a href="" class="title">Vue.js从理论精讲到项目实战课程</a>
+                <a href="" class="price">￥5000.00元</a>
+        </div>
+        <div class="footer">
+            <ul>
+                <li >
+                    <a href="" class="shouye">
+                        <div class="icon iconIndex"></div>
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li >
+                    <a href="" class="my">
+                        <div class="icon iconClass"></div>
+                        <p>我的课程</p>
+                    </a>
+                </li>
+                <li class="current">
+                    <a href="" class="">
+                        <div class="icon iconCenter"></div>
+                        <p>个人中心</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

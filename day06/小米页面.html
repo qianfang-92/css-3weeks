@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .clearfix:after{
+            content:"";
+            font-size:0;
+            display:block;
+            height:0;
+            visibility:hidden;
+            clear:both;
+        }
+        /* 兼容ie盒子的*/
+        .clearfix{
+            *zoom:1;
+        }
+        ul,ol{
+            list-style:none;
+        }
+        a{
+            text-decoration:none;
+            margin-top:15px;
+        }
+        .main{
+            height:1000px;
+            background:yellowgreen;
+        }
+        .contain{
+            width:1226px;
+            background:peru;
+            margin:0 auto;
+        }
+        .top>.point,a{
+            float:left;
+        }
+        .point,a{
+            vertical-align:bottom;
+            height:55px;
+        }
+        .top>input{
+            float:right;
+        }
+        .middle>.left{
+            width:234px;
+            height:460px;
+            background:rgba(105,101,101,.6);
+        }
+        .middle>.right{
+            width:992px;
+            height:460px;
+            background:powderblue;
+        }
+        .middle>.left,.right{
+            float:left;
+        }
+        .bottom>li{
+            width:316px;
+            height:170px;
+            background:darkgoldenrod;
+            float:left;
+            margin-left:13px;
+        }
+        .bottom>.nv{
+            width:234px;
+            margin-left:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="contain clearfix">
+            <div class="top clearfix">
+                <h1 class="point"> <img src="https://s02.mifile.cn/assets/static/image/mi-logo.png" alt=""></h1>
+                <a href="">小米手机</a>
+                <a href="">Redmi红米</a>
+                <a href="">电视</a>
+                <a href="">笔记本</a>
+                <a href="">家电</a>
+                <a href="">路由器</a>
+                <a href="">智能硬件</a>
+                <a href="">服务</a>
+                <a href="">社区</a>
+                <input type="text">
+
+            </div>
+            <div class="middle">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <ul class="bottom">
+                <li class="nv"></li>
+                <li class="redmi7"></li>
+                <li class="MIX3"></li>
+                <li class="hand"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

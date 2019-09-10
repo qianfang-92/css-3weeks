@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        audio {
+            width: 400px;
+            height: 300px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        controls:控制条；
+        autoplay:自动播放；
+        loop:循环播放；
+        preload:预先加载，一打开页面就会预先去加载资源；如果写了autoplay就不用写这个。
+     -->
+    <!-- <video src="212.mp4" controls loop ></video> -->
+    <!-- 兼容性处理 -->
+    <audio src="qt.mp3" controls>
+        <source src="qt.ogg">
+        <source src="qt.mp3">
+        <source src="qt.wav">
+    </audio>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;padding:0;
+        }
+        .box{
+            width:100px;
+            height:100px;
+            background:green;
+            /*forwards:停留在动画的最后一帧  */
+            /* animation: run 1s linear forwards; */
+            /* 如果动画设置有延迟，设置backwards会迅速的以第一帧开始 */
+            animation: run 1s linear 1s backwards;
+            /* both 是forwards 和 backwards 的综合*/
+            animation: run 1s linear 1s both;
+        }
+
+       @keyframes run {
+           0%{
+               transform: translateY(100px);
+           }
+           100%{
+               transform: translateY(300px);
+           }
+       }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

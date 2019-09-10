@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background:black;
+        }
+        .box{
+            width:241px;
+            height:187px;
+            background:url("smile.jpg");
+            margin:200px auto;
+            animation:run 1s steps(6) infinite;
+        }
+        @keyframes run{
+            100%{
+                background-position:-1446px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

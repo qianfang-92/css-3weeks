@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/test6.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script>
+        function refreshRem() {
+            var desW = 750,
+                winW = document.documentElement.clientWidth || document.body.clientWidth;
+            ratio = winW / desW;
+            document.documentElement.style.fontSize = ratio * 100 + 'px';
+        }
+        refreshRem();
+        window.addEventListener('resize', refreshRem);
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- 导航 -->
+        <nav class="nav">
+            <a href="" class="hot">热点</a>
+            <a href="" class="focus">关注</a>
+            <ul class="hotIndex">
+                <li>
+                    <a href="">足球现场</a>
+                </li>
+                <li>
+                    <a href="">足球生活</a>
+                </li>
+                <li>
+                    <a href="">足球美女</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- 内容 -->
+        <ul class="main">
+            <li>
+                <a href="">
+                    <p>小狗与猫</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <p>小狗与猫</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <p>小狗与猫</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <p>小狗与猫</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <p>小狗与猫</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <p>小狗与猫</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <p>小狗与猫</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <p>小狗与猫</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <p>小狗与猫</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <p>小狗与猫</p>
+                </a>
+            </li>
+        </ul>
+        <!-- 结尾 -->
+        <!-- 结尾写复杂了，可以直接给一个列表，5个li,让他们space-between；中间的那个照相机因为超出整行，可以在它里面写a,然后把a相对于这个li定位，这样不占位了，大小可以随便写 -->
+        <footer>
+            <ul class="left">
+                <li>
+                    <a href="">
+                        <i class="iconfont icon-fangzi01"></i>
+                        <p>首页</p>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="">
+                        <i class="iconfont icon-fangzi01"></i>
+                        <p>发现</p>
+                    </a>
+
+                </li>
+            </ul>
+            <a href="">
+                <i class="iconfont icon-zhaoxiangji"></i>
+            </a>
+            <ul class="right">
+                <li>
+                    <a href="">
+                        <i class="iconfont icon-fangzi01"></i>
+                        <p>我的</p>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="">
+                        <i class="iconfont icon-fangzi01"></i>
+                        <p>退出</p>
+                    </a>
+
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 
+        设计稿的宽/手机屏幕的宽= 按照设计稿设置一个html的font-size/适合手机的html的font-size
+        要算的就是适合手机屏幕宽度的html的font-size，其他的三个值都已知，就可以算出来了。
+
+        
+        */
+        *{
+            margin:0;
+            padding:0;
+        }
+        html{
+            font-size:200px;
+        }
+        .box{
+            width:1rem;
+            height:1rem;
+            background:lightblue;
+        }
+        p{
+            width:1.5rem;
+            height:0.3rem;
+            background:lightsalmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <p></p>
+</body>
+</html>

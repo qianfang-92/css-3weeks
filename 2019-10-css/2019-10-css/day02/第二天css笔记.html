@@ -1,0 +1,251 @@
+<!DOCTYPE html><html><head><title>第二天css笔记</title><meta charset='utf-8'><link href='https://cdn.maxiang.io/res-min/themes/marxico.css' rel='stylesheet'><style>
+.note-content  {font-family: ADMUI3Lg, 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, Song, sans-serif;}
+
+</style></head><body><div id='preview-contents' class='note-content'>
+                        
+                    
+
+<div><div class="toc"><div class="toc">
+<ul>
+<li><a href="#第二天css笔记">第二天css笔记</a><ul>
+<li><a href="#写一个页面所需要的几门语言">写一个页面所需要的几门语言</a></li>
+<li><a href="#标签的特点">标签的特点</a></li>
+<li><a href="#html的基本结构">html的基本结构</a></li>
+<li><a href="#标题标签">标题标签</a></li>
+<li><a href="#段落p">段落p</a></li>
+<li><a href="#图片">图片</a></li>
+<li><a href="#超链接-a标签">超链接 a标签</a></li>
+<li><a href="#a标签href的几个值">a标签href的几个值</a></li>
+<li><a href="#补充的几个标签">补充的几个标签</a></li>
+<li><a href="#三大列表">三大列表</a></li>
+<li><a href="#css-引入的几种方式">css 引入的几种方式：</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<h1 id="第二天css笔记">第二天css笔记</h1>
+
+<h2 id="写一个页面所需要的几门语言">写一个页面所需要的几门语言</h2>
+
+<ul><li><p>html: 它是一个超文本标记语言，为什么是超文本呢？因为它不仅可以单纯的表示文字，还可以表示音频、视频、图片等。（骨架）</p></li>
+<li><p>css：层叠样式表，它主要是用来美化页面的。（衣服、化妆品）</p></li>
+<li><p>js：javascript是一门轻量级的编程语言。例如：页面中的点击事件，以及一些业务逻辑（行为和动态）</p></li>
+</ul>
+
+<h2 id="标签的特点">标签的特点</h2>
+
+<ul><li><p>都是有尖括号括起来</p></li>
+<li><p>成对出现，由开始标签和结束标签组成</p></li>
+<li><p>结束标签比开始标签多了一个反斜杠</p></li>
+</ul>
+
+<blockquote>
+  <p>特殊情况：有一些标签例如 img、meta 并不是成对出现的，这类标签叫做<code>“单标签”</code>或者是<code>“空标签”</code>或者是<code>“自闭合标签”</code></p>
+</blockquote>
+
+<h2 id="html的基本结构">html的基本结构</h2>
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>  // 文档声明
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span> //国际通用编码，防止乱码
+</div><div class="hljs-line">        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"描述的内容"</span>&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"keywords"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"关键词"</span>&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>网页标题<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+</div><div class="hljs-line">        可视区
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</div></code></pre>
+
+<h2 id="标题标签">标题标签</h2>
+
+<blockquote>
+  <p>标题标签可以分为六级，h1到h6，表象上看，由粗到细，字号由大到小。对于搜索引擎来说，它是由重要程度之分的。h1是最重要的，之后逐次递减。一般一个页面中只出现一次h1. 大部分用在logo</p>
+</blockquote>
+
+<pre class="prettyprint hljs-dark"><code class="hljs dust"><div class="hljs-line"><span class="xml">    快捷生成：h$</span><span class="hljs-template-variable">{$级标题}</span><span class="xml">*6</span>
+</div><div class="hljs-line"><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>1级标题<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>2级标题<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>3级标题<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>4级标题<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>5级标题<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span></span>
+</div><div class="hljs-line"><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span>6级标题<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span></span>
+</div></code></pre>
+
+
+
+<h2 id="段落p">段落p</h2>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line"> <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>段落<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</div></code></pre>
+
+
+
+<h2 id="图片">图片</h2>
+
+<ul><li><p>src：图片的路径</p></li>
+<li><p>alt：当网比较慢或者是图片路径不正确，造成图片加载失败，那alt里面设置的如果有文字，就会出现在裂的图片旁边，更有利于用户体验</p></li>
+<li><p>title：当鼠标滑上图片的时候，会出现title里面设置的文字，有一个跟随效果</p></li>
+</ul>
+
+<pre class="prettyprint hljs-dark"><code class="hljs stylus"><div class="hljs-line"> &lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"http://img.mp.itc.cn/upload/20170110/b56b87be5f174eca81f9d06116aa1968.jpg"</span> alt=<span class="hljs-string">"火柴人图片"</span> title=<span class="hljs-string">"欢迎你们"</span>&gt;
+</div></code></pre>
+
+
+
+<h2 id="超链接-a标签">超链接 a标签</h2>
+
+<ul><li><p>href:跳转的网址</p></li>
+<li><p>target：</p>
+
+<ul>
+<li><p>_blank 在新窗口打开</p></li>
+<li><p>_self  在当前窗口打开</p></li></ul></li>
+</ul>
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line"><wbr>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://www.baidu.com"</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_self"</span>&gt;</span>百度<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</div></code></pre>
+
+
+
+<h2 id="a标签href的几个值">a标签href的几个值</h2>
+
+<ul><li><p>放的是网址： href=”http://www.baidu.com”</p></li>
+<li><p>回到顶部：href=”#”</p></li>
+<li><p>禁止跳转：href=”javascript:;”</p></li>
+<li><p>锚点跳转：给每一个模块用id起一个名字，a标签里面的href的值应该是# 加上id里面的那个名字</p></li>
+</ul>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css"></span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-selector-tag">div</span>{</span>
+</div><div class="hljs-line"><span class="css">            <span class="hljs-comment">/* 高度这个值和 行高一样的话，就会垂直居中*/</span></span>
+</div><div class="hljs-line"><span class="css">            <span class="hljs-attribute">height</span>:<span class="hljs-number">500px</span>;</span>
+</div><div class="hljs-line"><span class="css">            <span class="hljs-attribute">line-height</span>: <span class="hljs-number">500px</span>;</span>
+</div><div class="hljs-line"><span class="css">            <span class="hljs-attribute">background</span>:darkturquoise;</span>
+</div><div class="hljs-line"><span class="css">            <span class="hljs-attribute">margin-bottom</span>:<span class="hljs-number">20px</span>;</span>
+</div><div class="hljs-line"><span class="css">            <span class="hljs-comment">/* 文字水平居中 */</span></span>
+</div><div class="hljs-line"><span class="css">            <span class="hljs-attribute">text-align</span>: center;</span>
+</div><div class="hljs-line"><span class="css">        }</span>
+</div><div class="hljs-line"><span class="css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"goods1"</span>&gt;</span>好店直播<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"goods2"</span>&gt;</span>品质特色<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"goods3"</span>&gt;</span>实惠热卖<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"goods4"</span>&gt;</span>猜你喜欢<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#goods1"</span>&gt;</span>好店直播<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#goods2"</span>&gt;</span>品质特色<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#goods3"</span>&gt;</span>实惠热卖<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#goods4"</span>&gt;</span>猜你喜欢<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>回到顶部<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</div></code></pre>
+
+
+
+<h2 id="补充的几个标签">补充的几个标签</h2>
+
+<ul><li><p>div：大盒子标签，主要用来划分大区域用的</p></li>
+<li><p>span：小盒子标签，主要用来划分小区域用的</p></li>
+<li><p>格式化标签</p>
+
+<ul>
+<li><p>加粗：b或者strong</p></li>
+<li><p>斜体：i或者em</p></li>
+<li><p>删除线：del</p></li>
+<li><p>增大：big</p></li>
+<li><p>减小：small</p></li></ul></li>
+<li><p>预格式化标签pre：按照预定设置好的格式进行显示</p></li>
+</ul>
+
+<h2 id="三大列表">三大列表</h2>
+
+<p>1、无序列表：ul、li，这个是固定格式，ul里面紧邻着的一定是li，不能是其它标签，但是可以在li里面继续嵌套其它标签。</p>
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line"> <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+</div><div class="hljs-line">         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>上班<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</div><div class="hljs-line">         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>吃饭<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</div><div class="hljs-line">         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>睡觉<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</div><div class="hljs-line">         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>打豆豆<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</div><div class="hljs-line"> <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</div></code></pre>
+
+<p>2、有序列表：ol 、li，这个是固定格式，ul里面紧邻着的一定是li，不能是其它标签，但是可以在li里面继续嵌套其它标签。</p>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+</div><div class="hljs-line">         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>上班<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</div><div class="hljs-line">         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>吃饭<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</div><div class="hljs-line">         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>打豆豆<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+</div></code></pre>
+
+<p>3、自定义列表 <br>
+dl里面紧邻着的只能是dt或者dd，但是在dt或者是dd里面还可以写其它的标签</p>
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line">      <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>一日三餐<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+</div><div class="hljs-line">      <span class="hljs-tag">&lt;<span class="hljs-name">dl</span>&gt;</span>
+</div><div class="hljs-line">          <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>早餐<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+</div><div class="hljs-line">          <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>豆浆<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+</div><div class="hljs-line">          <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>包子<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+</div><div class="hljs-line">          <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>午餐<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+</div><div class="hljs-line">          <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>盖饭<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+</div><div class="hljs-line">          <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>鸡蛋面<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+</div><div class="hljs-line">          <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>晚餐<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+</div><div class="hljs-line">          <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>小龙虾<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+</div><div class="hljs-line">          <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>饮料<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+</div><div class="hljs-line">      <span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span>
+</div></code></pre>
+
+<h2 id="css-引入的几种方式">css 引入的几种方式：</h2>
+
+<p>1、行内式</p>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs applescript"><div class="hljs-line">&lt;<span class="hljs-keyword">div</span> style=<span class="hljs-string">"color:deeppink;"</span>&gt;你们都很棒！&lt;/<span class="hljs-keyword">div</span>&gt;
+</div></code></pre>
+
+<p>2、内嵌式：在head里面通过style标签来写，如下</p>
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css"></span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-selector-tag">div</span>,<span class="hljs-selector-tag">p</span>{</span>
+</div><div class="hljs-line"><span class="css">            <span class="hljs-attribute">width</span>:<span class="hljs-number">500px</span>;</span>
+</div><div class="hljs-line"><span class="css">            <span class="hljs-attribute">height</span>:<span class="hljs-number">200px</span>;</span>
+</div><div class="hljs-line"><span class="css">            <span class="hljs-attribute">background</span>:greenyellow;</span>
+</div><div class="hljs-line"><span class="css">            <span class="hljs-attribute">color</span>:hotpink;</span>
+</div><div class="hljs-line"><span class="css">        }</span>
+</div><div class="hljs-line"><span class="css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</div></code></pre>
+
+<p>3、外链式，在head里面通过link标签把样式表给链接过来。</p>
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"index.css"</span>&gt;</span>
+</div></code></pre>
+
+<p>4、导入式</p>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line">   <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css"></span>
+</div><div class="hljs-line"><span class="css">        @<span class="hljs-keyword">import</span> <span class="hljs-string">"index.css"</span></span>
+</div><div class="hljs-line"><span class="css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</div></code></pre></div></body></html>

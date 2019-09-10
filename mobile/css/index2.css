@@ -1,0 +1,230 @@
+html,body,.banner,.bannerIn,.bannerIn>li{
+     width:100%;
+     height:100%;
+}
+.banner{
+    background:lightblue;
+    position:relative;
+}
+.bannerIn a{
+    height:100%;
+    display:block;
+    background:url("../images/1.jpg") no-repeat center center ;
+    background-size:cover;
+}
+.md{
+    width:1080px;
+    padding:0 20px;
+    box-sizing:border-box;
+    margin:0 auto;
+}
+.nav{
+    height:80px;
+    width:100%;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.navIn{
+    height:80px;
+}
+.logo{
+    float:left;
+    margin-top:21.5px;
+}
+.navRight{
+    float:right;
+    margin-top:22px;
+}
+.navRight>li{
+    float:left;
+}
+.navRight>li>a{
+    padding:8px 20px;
+    display:block;
+    box-sizing:border-box;
+    font-size:16px;
+    color:#fff;
+}
+.advText{
+    width:100%;
+    position:absolute;
+    left:0;
+    top:50%;
+}
+.advTextIn>h1{
+    font-size:66px;
+    margin-bottom:20px;
+    color:#fff;
+}
+.advTextIn>a{
+    display:block;
+    padding:14px 26px;
+    box-sizing:border-box;
+    width:292px;
+    height:60px;
+    font-size:22px;
+    color:#fff;
+    background:rgba(0,0,0,.6);
+    border-radius:6px;
+    text-align:center;
+}
+.hotLists{
+    width:100%;
+}
+.hotLists>li{
+    float:left;
+    width:25%;
+    border:1px solid #fff;
+    border-top:2px solid #fff;
+    border-bottom:none;
+    box-sizing:border-box;
+}
+.hotLists>li:first-child{
+    border-left:none;
+}
+.hotLists>li:last-child{
+    border-right:none;
+}
+.hotLists>li a{
+    width:100%;
+    height:260px;
+    display:block;
+    background:url("../images/2.jpg") no-repeat center center;
+    background-size:cover ;
+    padding:2.4vw;
+    font-size:22px;
+    color:#fff;
+    text-align:center;
+    box-sizing:border-box;
+}
+.app{
+    border-bottom:1px solid gray;
+}
+.app>li{
+    float:left;
+    padding:45px 0;
+    box-sizing:border-box;
+    width:33.33%;
+    text-align:center;
+    margin:0 auto;
+}
+.app>li:first-child{
+    text-align:left;
+}
+.app>li:last-child{
+    text-align:right;
+}
+.app>li img{
+    width:50px;
+    height:50px;
+    margin-right:10px;
+
+}
+.app>li div,.app>li img{
+    vertical-align:top;
+}
+.app>li div{
+    display:inline-block;
+    width:60%;
+}
+.app>li p{
+    font-size:16px;
+    line-height:1.4;
+    text-align:left;
+    width:100%;
+}
+.app>li h5{
+    font-size:16px;
+    font-weight:500;
+    line-height:1.4;
+    text-align:left;
+    width:100%
+}
+/* 屏幕缩小时版心消失 如果不消失，在屏幕缩小时会出现横轴的滚动条，因为版心写死了*/
+@media screen and (max-width:1080px) and (min-width:640px){
+    .navRight{
+        /* visibility:hidden; */
+        display:none;
+    }
+    .md{
+        width:100%;
+    }
+    .hotLists>li{
+        width:50%;
+    }
+    .hotLists>li:nth-child(2){
+        border-right:none;
+    }
+    .hotLists>li:nth-child(3){
+        border-left:none;
+    }
+}
+@media screen and (max-width:640px){
+    .hotLists>li{
+        width:100%;
+        border-left:none;
+        border-right:none;
+    }
+    .app>li{
+        width:100%;
+        text-align:left;
+    }
+    .app>li:last-child{
+        text-align:left;
+    }
+}
+.footer{
+    padding:45px 0;
+}
+.footer .left{
+    float:left;
+}
+.footer .left>li>a>svg{
+    /* display:block; */
+    width:160px;
+    height:36.8px;
+    margin-top:-5px;
+}
+.footer .left li{
+    font-size:16px;
+    font-weight:300;
+    line-height:2.3;
+    font-family:'Helvetica Neue', Helvetica, 'PingFang SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', Arial, Verdana, sans-serif;
+}
+.footer .left li a{
+    font-size:16px;
+    font-weight:300;
+    line-height:2.3;
+    color:#111;
+    font-family:'Helvetica Neue', Helvetica, 'PingFang SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', Arial, Verdana, sans-serif;
+}
+.footer .right{
+    float:right;
+    width:540px;
+
+}
+.footer .right li{
+    float:left;
+    width:135px;
+}
+.footer .right li a{
+    display:block;
+    font-size:16px;
+    line-height:2;
+    color:#111;
+    font-weight:300;
+}
+.footer .right li a:hover{
+    color:red;
+}
+.footer .right li h4{
+    font-size:16px;
+    line-height:2;
+}
+@media screen and (max-width:808px){
+    .footer .right{
+        float:left;
+        width:540px;
+    }
+}

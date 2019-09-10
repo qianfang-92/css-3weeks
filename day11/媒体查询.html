@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height:200px;
+            background:darkolivegreen;
+        }
+        /* 媒体查询  screen是屏幕限制条件 and的前后需要有空格，小括号里写限制的条件 max-width:最大值是，就是说小于等于这个值时 中括号里写达到限制条件后的设置 */
+        @media screen and (max-width:600px){
+            .box{
+                background:saddlebrown;
+                width:100px;
+                height:100px;
+            }
+        }
+        /* min-width:大于等于这个值时 */
+        @media screen and (min-width:1000px){
+            .box{
+                background:sandybrown;
+                width:100px;
+                height:100px;
+                
+            }
+        }
+        /* 还可以是一个完整的区间，用and连接不同的条件 */
+        @media screen and (min-width:601px) and (max-width:999px){
+            .box{
+                background:slateblue;
+                width:150px;
+                height:150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

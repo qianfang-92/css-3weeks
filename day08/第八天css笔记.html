@@ -1,0 +1,172 @@
+<!DOCTYPE html><html><head><title>第八天css笔记</title><meta charset='utf-8'><link href='https://cdn.maxiang.io/res-min/themes/marxico.css' rel='stylesheet'><style>
+.note-content  {font-family: ADMUI3Lg, 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, Song, sans-serif;}
+
+</style></head><body><div id='preview-contents' class='note-content'>
+                        
+                    
+
+<div><div class="toc"><div class="toc">
+<ul>
+<li><ul>
+<li><ul>
+<li><a href="#第八天css笔记">第八天css笔记</a><ul>
+<li><a href="#新增的c3选择器">新增的c3选择器</a></li>
+<li><a href="#定位">定位</a><ul>
+<li><a href="#相对定位">相对定位</a></li>
+<li><a href="#绝对定位">绝对定位</a></li>
+<li><a href="#固定定位">固定定位：</a></li>
+<li><a href="#圆border-radius50">圆：border-radius：50%；</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<h3 id="第八天css笔记">第八天css笔记</h3>
+
+<h4 id="新增的c3选择器">新增的c3选择器</h4>
+
+<p>1、.box&gt;li:nth-child(2n+1){}，代表的意思：选择<strong>所有</strong>儿子元素中的第几个</p>
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">'UTF-8'</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'keywords'</span> <span class="hljs-attr">content</span>=<span class="hljs-string">'关键词'</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'description'</span> <span class="hljs-attr">content</span>=<span class="hljs-string">'描述的文字'</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>c3选择器<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css"></span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-comment">/* </span></span>
+</div><div class="hljs-line"><span class="css">        odd 奇数</span>
+</div><div class="hljs-line"><span class="css">        even 偶数</span>
+</div><div class="hljs-line"><span class="css">         */</span>
+</div><div class="hljs-line"><span class="css"></span>
+</div><div class="hljs-line"><span class="css">    <span class="hljs-comment">/* .box&gt;li:nth-child(2n+1){</span></span>
+</div><div class="hljs-line"><span class="css">        background:green;</span>
+</div><div class="hljs-line"><span class="css">    } */</span>
+</div><div class="hljs-line"><span class="css">    <span class="hljs-selector-class">.box</span>&gt;<span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:first-child</span>{</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-attribute">background</span>:green;</span>
+</div><div class="hljs-line"><span class="css">    }</span>
+</div><div class="hljs-line"><span class="css">    <span class="hljs-selector-class">.box</span>&gt;<span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:last-child</span>{</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-attribute">background</span>:blanchedalmond;</span>
+</div><div class="hljs-line"><span class="css">    }</span>
+</div><div class="hljs-line"><span class="css">    <span class="hljs-comment">/* 倒数 */</span></span>
+</div><div class="hljs-line"><span class="css">    <span class="hljs-selector-class">.box</span>&gt;<span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:nth-last-child(2)</span>{</span>
+</div><div class="hljs-line"><span class="css">         <span class="hljs-attribute">background</span>:blue;</span>
+</div><div class="hljs-line"><span class="css">    }</span>
+</div><div class="hljs-line"><span class="css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box"</span>&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>li1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>li2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>li3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>li4<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>li5<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>li6<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</div><div class="hljs-line"><wbr>
+</div></code></pre>
+
+<p>2、 .box&gt;p:nth-of-type(5){    } 代表的意思：选中特定类型中的第几个</p>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">'UTF-8'</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'keywords'</span> <span class="hljs-attr">content</span>=<span class="hljs-string">'关键词'</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'description'</span> <span class="hljs-attr">content</span>=<span class="hljs-string">'描述的文字'</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>c3选择器<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css"></span>
+</div><div class="hljs-line"><span class="css">      <span class="hljs-selector-class">.box</span>&gt;<span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:nth-of-type(5)</span>{</span>
+</div><div class="hljs-line"><span class="css">         <span class="hljs-attribute">background</span>:green;</span>
+</div><div class="hljs-line"><span class="css">      }</span>
+</div><div class="hljs-line"><span class="css">      <span class="hljs-selector-class">.box</span>&gt;<span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:nth-child(7)</span>{</span>
+</div><div class="hljs-line"><span class="css">          <span class="hljs-attribute">background</span>:gold;</span>
+</div><div class="hljs-line"><span class="css">      }</span>
+</div><div class="hljs-line"><span class="css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+</div><div class="hljs-line">   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box"</span>&gt;</span>
+</div><div class="hljs-line">       <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>p1<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</div><div class="hljs-line">       <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>p2<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</div><div class="hljs-line">       <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>p3<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</div><div class="hljs-line">       <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>p4<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</div><div class="hljs-line">       <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>h1<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</div><div class="hljs-line">       <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>h2<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</div><div class="hljs-line">       <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>p5<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+</div><div class="hljs-line">       <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>p6<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</div><div class="hljs-line">   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</div><div class="hljs-line"><wbr>
+</div></code></pre>
+
+
+
+<h4 id="定位">定位</h4>
+
+<ul><li><p>默认的是static</p></li>
+<li><p>相对定位：relative</p></li>
+<li><p>绝对定位：absolute;</p></li>
+<li><p>固定定位：fixed；</p></li>
+</ul>
+
+<h5 id="相对定位">相对定位</h5>
+
+<blockquote>
+  <p>让谁相对定位，就给谁添加position：relative,方向值：left、right、bottom、top。</p>
+  
+  <p>相对定位的特点：</p>
+  
+  <ul><li><p>1、相对自身</p></li>
+  <li><p>2、没有脱离文档流</p></li>
+  <li><p>3、层级高于普通文档流</p></li>
+  <li><p>4、最重要的，给绝对定位做参照物。</p></li>
+  <li><p>5、如果同时把四个方向的值都写了，默认会是left 和top</p></li>
+  </ul>
+  
+  </blockquote>
+
+<h5 id="绝对定位">绝对定位</h5>
+
+<blockquote>
+  <p>使用：想要谁绝对定位，就给谁添加position:absolute;但是一定要设置参照物，给它的参照物设置,position:relative;如果它的参照物本身就具备position：relative,或者是position:absolute,或者是position：fixed，三者之一都能满足这个参照物条件。 <br>
+  绝对定位的特点：</p>
+</blockquote>
+
+<ul><li><p>1、脱离文档流</p></li>
+<li><p>2、层级高于普通文档流</p></li>
+<li><p>3、需要注意的，在设置参照物的时候，这个参照物不能是同级，必须是上级元素（前辈元素都可以）。</p></li>
+<li><p>4、浏览器在寻找参照物的时候有个规则“就近原则”。先找父级元素，如果父级元素中满足参照物的条件，那就是父级元素，如果父级不满足，就继续向父级的父级继续查找，如果都没有，那参照物就是body</p></li>
+<li><p>5、定位的元素如果不设置宽度，它的宽度是内容的大小，如果用百分比设置宽度，它是按照参照物的宽度，不是父级。</p></li>
+</ul>
+
+<h5 id="固定定位">固定定位：</h5>
+
+<blockquote>
+  <p>想让谁固定定位，就给谁设置position:fixed; <br>
+  固定定位的参照物就是浏览器窗口。</p>
+</blockquote>
+
+<h5 id="圆border-radius50">圆：border-radius：50%；</h5>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs css"><div class="hljs-line"><span class="hljs-selector-class">.fastNav</span>{
+</div><div class="hljs-line">        <span class="hljs-attribute">width</span>:<span class="hljs-number">100px</span>;
+</div><div class="hljs-line">        <span class="hljs-attribute">height</span>:<span class="hljs-number">100px</span>;
+</div><div class="hljs-line">        <span class="hljs-attribute">border-radius</span>:<span class="hljs-number">50%</span>;
+</div><div class="hljs-line">    }
+</div></code></pre></div></body></html>

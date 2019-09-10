@@ -1,0 +1,183 @@
+<!DOCTYPE html><html><head><title>第八天css笔记</title><meta charset='utf-8'><link href='https://cdn.maxiang.io/res-min/themes/marxico.css' rel='stylesheet'><style>
+.note-content  {font-family: ADMUI3Lg, 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, Song, sans-serif;}
+
+</style></head><body><div id='preview-contents' class='note-content'>
+                        
+                    
+
+<div><div class="toc"><div class="toc">
+<ul>
+<li><ul>
+<li><a href="#第八天css笔记">第八天css笔记</a><ul>
+<li><a href="#css3选择器">css3选择器</a></li>
+<li><a href="#定位position">定位：position</a><ul>
+<li><a href="#相对定位">相对定位</a></li>
+<li><a href="#绝对定位">绝对定位</a></li>
+<li><a href="#固定定位">固定定位</a></li>
+<li><a href="#面试题如何让一个元素在整个屏幕或者是一个盒子中水平垂直居中">面试题：如何让一个元素在整个屏幕或者是一个盒子中水平垂直居中</a></li>
+</ul>
+</li>
+<li><a href="#精灵图">精灵图</a></li>
+<li><a href="#border-radius50-圆">border-radius:50% (圆)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<h2 id="第八天css笔记">第八天css笔记</h2>
+
+
+
+<h3 id="css3选择器">css3选择器</h3>
+
+<blockquote>
+  <p>nth-child 这个代表的是选中<code>所有儿子元素</code>中的第几个；nth-of-type 是选中儿子元素中<code>特定类型</code>中的第几个</p>
+</blockquote>
+
+<pre class="prettyprint hljs-dark"><code class="hljs dts"><div class="hljs-line">   <span class="hljs-comment">/* .main&gt;p:nth-child(4){</span>
+</div><div class="hljs-line"><span class="hljs-comment">        background:cadetblue;</span>
+</div><div class="hljs-line"><span class="hljs-comment">    } */</span>
+</div><div class="hljs-line">    <span class="hljs-comment">/* 正数所有儿子中的第几个 */</span>
+</div><div class="hljs-line">    <span class="hljs-comment">/* ul&gt;li:nth-child(3){</span>
+</div><div class="hljs-line"><span class="hljs-comment">        background:green;</span>
+</div><div class="hljs-line"><span class="hljs-comment">    } */</span>
+</div><div class="hljs-line">    <span class="hljs-comment">/* 最后一个 */</span>
+</div><div class="hljs-line">    <span class="hljs-comment">/* ul&gt;li:last-child{</span>
+</div><div class="hljs-line"><span class="hljs-comment">        background:coral;</span>
+</div><div class="hljs-line"><span class="hljs-comment">    } */</span>
+</div><div class="hljs-line">    <span class="hljs-comment">/* 第一个 */</span>
+</div><div class="hljs-line">    <span class="hljs-comment">/* ul&gt;li:first-child{</span>
+</div><div class="hljs-line"><span class="hljs-comment">        background:cornflowerblue;</span>
+</div><div class="hljs-line"><span class="hljs-comment">    } */</span>
+</div><div class="hljs-line">    <span class="hljs-comment">/* 倒数第几个 */</span>
+</div><div class="hljs-line">    <span class="hljs-comment">/* ul&gt;li:nth-last-child(2){</span>
+</div><div class="hljs-line"><span class="hljs-comment">          font-size:100px;</span>
+</div><div class="hljs-line"><span class="hljs-comment">    } */</span>
+</div><div class="hljs-line">    <span class="hljs-comment">/* 偶数 even */</span>
+</div><div class="hljs-line">    ul&gt;li:nth-child(<span class="hljs-number">2</span>n){
+</div><div class="hljs-line"><span class="hljs-symbol">        background:</span>cornflowerblue;
+</div><div class="hljs-line">    }
+</div><div class="hljs-line">    <span class="hljs-comment">/* 奇数 odd*/</span>
+</div><div class="hljs-line">    ul&gt;li:nth-child(<span class="hljs-number">2</span>n+<span class="hljs-number">1</span>){
+</div><div class="hljs-line"><span class="hljs-symbol">        background:</span>lightgreen;
+</div><div class="hljs-line">    }
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line">   .main&gt;p:nth-child(<span class="hljs-number">4</span>){
+</div><div class="hljs-line"><span class="hljs-symbol">        background:</span>cadetblue;
+</div><div class="hljs-line">   }
+</div><div class="hljs-line">   <span class="hljs-params">&lt;/style&gt;</span>
+</div><div class="hljs-line"> <span class="hljs-params">&lt;ul&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-params">&lt;li&gt;</span><span class="hljs-number">1</span><span class="hljs-params">&lt;/li&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-params">&lt;li&gt;</span><span class="hljs-number">1</span><span class="hljs-params">&lt;/li&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-params">&lt;li&gt;</span><span class="hljs-number">1</span><span class="hljs-params">&lt;/li&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-params">&lt;li&gt;</span><span class="hljs-number">1</span><span class="hljs-params">&lt;/li&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-params">&lt;li&gt;</span><span class="hljs-number">1</span><span class="hljs-params">&lt;/li&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-params">&lt;li&gt;</span><span class="hljs-number">1</span><span class="hljs-params">&lt;/li&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-params">&lt;/ul&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-params">&lt;div class="main"&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-params">&lt;h1&gt;</span><span class="hljs-number">1</span><span class="hljs-params">&lt;/h1&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-params">&lt;h2&gt;</span><span class="hljs-number">2</span><span class="hljs-params">&lt;/h2&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-params">&lt;p&gt;</span>p1<span class="hljs-params">&lt;/p&gt;</span>
+</div><div class="hljs-line">         <span class="hljs-params">&lt;h4&gt;</span>h4<span class="hljs-params">&lt;/h4&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-params">&lt;h3&gt;</span><span class="hljs-number">3</span><span class="hljs-params">&lt;/h3&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-params">&lt;h4&gt;</span><span class="hljs-number">4</span><span class="hljs-params">&lt;/h4&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-params">&lt;h5&gt;</span><span class="hljs-number">5</span><span class="hljs-params">&lt;/h5&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-params">&lt;h6&gt;</span><span class="hljs-number">6</span><span class="hljs-params">&lt;/h6&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-params">&lt;p&gt;</span>p3<span class="hljs-params">&lt;/p&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-params">&lt;p&gt;</span>p4<span class="hljs-params">&lt;/p&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-params">&lt;/div&gt;</span>
+</div></code></pre>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs dts"><div class="hljs-line">    <span class="hljs-comment">/* .main&gt;p:nth-of-type(3){</span>
+</div><div class="hljs-line"><span class="hljs-comment">          background:green;</span>
+</div><div class="hljs-line"><span class="hljs-comment">      } */</span>
+</div><div class="hljs-line">      .main&gt;p:nth-last-of-type(<span class="hljs-number">2</span>){
+</div><div class="hljs-line"><span class="hljs-symbol">        background:</span>green;
+</div><div class="hljs-line">      }
+</div><div class="hljs-line">     <span class="hljs-params">&lt;div class="main"&gt;</span>
+</div><div class="hljs-line">                <span class="hljs-params">&lt;h1&gt;</span><span class="hljs-number">1</span><span class="hljs-params">&lt;/h1&gt;</span>
+</div><div class="hljs-line">                <span class="hljs-params">&lt;h2&gt;</span><span class="hljs-number">2</span><span class="hljs-params">&lt;/h2&gt;</span>
+</div><div class="hljs-line">                <span class="hljs-params">&lt;p&gt;</span>p1<span class="hljs-params">&lt;/p&gt;</span>
+</div><div class="hljs-line">                 <span class="hljs-params">&lt;h4&gt;</span>h4<span class="hljs-params">&lt;/h4&gt;</span>
+</div><div class="hljs-line">                <span class="hljs-params">&lt;h3&gt;</span><span class="hljs-number">3</span><span class="hljs-params">&lt;/h3&gt;</span>
+</div><div class="hljs-line">                <span class="hljs-params">&lt;h4&gt;</span><span class="hljs-number">4</span><span class="hljs-params">&lt;/h4&gt;</span>
+</div><div class="hljs-line">                <span class="hljs-params">&lt;h5&gt;</span><span class="hljs-number">5</span><span class="hljs-params">&lt;/h5&gt;</span>
+</div><div class="hljs-line">                <span class="hljs-params">&lt;h6&gt;</span><span class="hljs-number">6</span><span class="hljs-params">&lt;/h6&gt;</span>
+</div><div class="hljs-line">                <span class="hljs-params">&lt;p&gt;</span>p3<span class="hljs-params">&lt;/p&gt;</span>
+</div><div class="hljs-line">                <span class="hljs-params">&lt;p&gt;</span>p4<span class="hljs-params">&lt;/p&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-params">&lt;/div&gt;</span>
+</div></code></pre>
+
+
+
+<h3 id="定位position">定位：position</h3>
+
+<ul><li><p>static 静态定位</p></li>
+<li><p>relative 相对定位</p></li>
+<li><p>absolute 绝对定位</p></li>
+<li><p>fixed       固定定位</p></li>
+</ul>
+
+
+
+<h4 id="相对定位">相对定位</h4>
+
+<ul><li><p>没有脱离文档流，位置还在</p></li>
+<li><p>层级高于普通文档流</p></li>
+<li><p>给绝对定位的元素做参照物</p></li>
+<li><p>相对自身</p></li>
+</ul>
+
+
+
+<h4 id="绝对定位">绝对定位</h4>
+
+<ul><li><p>脱离文档流</p></li>
+<li><p>层级高于普通文档流的层级</p></li>
+<li><p>绝对定位的元素在设置参照物的时候，必须是包含关系的上级元素</p></li>
+<li><p>浏览器在寻找参照物的时候是按照<code>就近原则</code>进行查找，如果都没有设置，那它的参照物就是body</p></li>
+<li><p>原本宽度可以继承，但是定位的元素，宽度不再继承了，是由自身内容决定的。如果是行内元素，定位之后，宽、高也可以起作用。</p></li>
+<li><p>如果给绝对定位元素的宽度设置百分比的时候，那它是相对你参照物来说的，并不是父级。</p></li>
+</ul>
+
+<p>绝对定位的参照物：position：relative或者position:absolute、position:fixed ,只要是三者之一即可。</p>
+
+<h4 id="固定定位">固定定位</h4>
+
+<p>固定定位是相对于整个窗口的。</p>
+
+<h4 id="面试题如何让一个元素在整个屏幕或者是一个盒子中水平垂直居中">面试题：如何让一个元素在整个屏幕或者是一个盒子中水平垂直居中</h4>
+
+<p>让这个元素position：absolute；</p>
+
+<ul><li><p>left：50%；top：50%；</p></li>
+<li><p>margin-left：负的盒子宽的一半；</p></li>
+<li><p>margin-top:负的盒子高度的一半</p></li>
+</ul>
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line"> <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css"></span>
+</div><div class="hljs-line"><span class="css">    <span class="hljs-selector-class">.box</span>{</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-attribute">width</span>:<span class="hljs-number">200px</span>;</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-attribute">height</span>:<span class="hljs-number">200px</span>;</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-attribute">background</span>:green;</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-attribute">position</span>: absolute;</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-attribute">left</span>:<span class="hljs-number">50%</span>;</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-attribute">top</span>:<span class="hljs-number">50%</span>;</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-attribute">margin-left</span>:-<span class="hljs-number">100px</span>;</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-attribute">margin-top</span>:-<span class="hljs-number">100px</span>;</span>
+</div><div class="hljs-line"><span class="css">    }</span>
+</div><div class="hljs-line"><span class="css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</div></code></pre>
+
+<h3 id="精灵图">精灵图</h3>
+
+<p>在做项目的时候，有时候咱们为了优化，减少http请求，会把多张图片合并到一张图片上面，这种图就是“精灵图”，也称“雪碧图”。(只针对小图)  <br>
+精灵图的原理：通过改变background-position。再记住一点，在写精灵图的时候，background-position的x轴，y轴的值一定的负的。</p>
+
+<h3 id="border-radius50-圆">border-radius:50% (圆)</h3></div></body></html>

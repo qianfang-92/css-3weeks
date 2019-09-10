@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    .box{
+        width:200px;
+        height:200px;
+        background:green;
+    }
+
+     /* 需求：小于768px的时候显示一个颜色
+             大于768到1100 显示一个颜色
+             大于1100的时候显示一个颜色 
+     */
+     @media screen and (max-width:768px){
+         .box{
+             background:pink;
+         }
+     }
+     @media screen and (min-width:769px) and (max-width:1100px){
+        .box{
+             background:blue;
+         }
+     }
+     @media screen and (min-width:1101px){
+        .box{
+             background:darkorchid;
+         }
+     }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

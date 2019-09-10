@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .box{
+        width:200px;
+        height:200px;
+        border:1px solid red;
+        /* 超出隐藏 */
+        /* overflow:hidden; */
+        overflow:auto;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+            给父级盒子加高度
+
+            2、给浮动元素的父级的末尾添加一个空div，给它设置clear：both；
+            
+            clear：left；清除左浮动
+            
+            clear：right；清除右浮动
+            
+            clear：both；清除左右浮动（通常用这个）
+            
+            3、谁浮动，就给谁的父级的类名中添加clearfix。这种方法和第二种的本质一样，只是这种让你写起来更方便。（用的最多）
+            
+            4、给浮动元素的父级添加overflow：hidden；
+            
+            .clearfix:after{
+    </div>
+</body>
+</html>

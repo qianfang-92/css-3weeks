@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        html,body{
+            width:100%;
+            height:100%;
+            background: url(bk.webp) no-repeat;
+        }
+        .wukong{
+            width: 200px;
+            height: 180px;
+            position: absolute;
+            top:380px;
+            left: 260px;
+            background:url(wukong.png) left center no-repeat;
+            animation: wukong 1s steps(8) infinite;
+        }
+        .bajie{
+            width: 200px;
+            height: 180px;
+            position: absolute;
+            top:380px;
+            left: 460px;
+            background:url(bajie.png) left center no-repeat;
+            animation: wukong 1s steps(8) infinite;
+        }
+        .tangs{
+            width: 170px;
+            height: 240px;
+            position: absolute;
+            top:350px;
+            left: 660px;
+            background:url(tangs.png) left center no-repeat;
+            animation: tangs 1s steps(8) infinite;
+        }
+        .shas{
+            width: 210px;
+            height: 200px;
+            position: absolute;
+            top:380px;
+            left: 860px;
+            background:url(shas.png) left center no-repeat;
+            animation: shas 1s steps(8) infinite;
+        }
+        @keyframes wukong {
+            100%{
+                background-position-x: -1600px;
+            }
+        }
+        @keyframes tangs {
+            100%{
+                background-position-x: -1360px;
+            }
+        }
+        @keyframes shas {
+            100%{
+                background-position-x: -1680px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <audio src="qt.mp3" autoplay loop></audio>
+    <div class="wukong"></div>
+    <div class="bajie"></div>
+    <div class="tangs"></div>
+    <div class="shas"></div>
+</body>
+</html>

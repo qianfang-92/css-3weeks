@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        function refreshRem() {
+            var desW = 750,
+                winW = document.documentElement.clientWidth || document.body.clientWidth;
+            ratio = winW / desW;
+            document.documentElement.style.fontSize = ratio * 100 + 'px';
+        }
+        refreshRem();
+        window.addEventListener('resize', refreshRem);
+    </script>
+</head>
+
+<body>
+    <!-- 导航 -->
+    <ul class="nav md clearfix">
+        <li>
+            <a href="">推荐</a>
+        </li>
+        <li>
+            <a href="">视频</a>
+        </li>
+        <li>
+            <a href="">热点</a>
+        </li>
+        <li>
+            <a href="">小说</a>
+        </li>
+        <li>
+            <a href="">娱乐</a>
+        </li>
+    </ul>
+    <!-- banner -->
+    <div class="banner"></div>
+    <!-- 内容 -->
+    <ul class="content">
+        <li>
+            <section class="new"></section>
+            <section class="word">城市绿道：迈向幸福的康庄大道</section>
+        </li>
+        <li>
+            <section class="new"></section>
+            <section class="word">城市绿道：迈向幸福的康庄大道</section>
+        </li>
+        <li>
+            <section class="new"></section>
+            <section class="word">城市绿道：迈向幸福的康庄大道</section>
+        </li>
+        <li>
+            <section class="new"></section>
+            <section class="word">城市绿道：迈向幸福的康庄大道</section>
+        </li>
+        <li>
+            <section class="new"></section>
+            <section class="word">城市绿道：迈向幸福的康庄大道</section>
+        </li>
+    </ul>
+    <!-- 尾部 -->
+    <footer></footer>
+</body>
+
+</html>

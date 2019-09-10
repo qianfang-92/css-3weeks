@@ -1,0 +1,232 @@
+.md{
+    margin:0 auto;
+    width:967px;
+}
+.navBox{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    z-index:999;
+}
+.navTop{
+    background:#444;
+    line-height:1;
+    padding:0 276px;
+}
+.navTop p{
+    line-height:40px;
+    height:40px;
+    width:967px;
+    color:#a8a8aa;
+    text-align:right;
+}
+.navBottom{
+    background:rgba(45,45,45,0.98);
+}
+.navBottom ul{
+    width:967px;
+    overflow:hidden;
+    margin:0 auto;
+}
+.navBottom li{
+    float:left;
+    text-align:center;
+    margin-right:88px;
+}
+.navBottom li:last-child{
+    margin-right:0;
+}
+.navBottom li a{
+    display:block;
+    height:44px;
+    width:10%;
+    color:white;
+    line-height:44px;
+}
+.navBottom  ul li .word{
+    width:100%;
+}
+.navBottom li a i{
+    width:16px;
+    height:44px;
+    line-height:44px;
+    color:white;
+}
+.part1Box{
+    text-align:center;
+    padding-top:47px;
+    box-sizing:border-box;
+    background:url("../images/1.jpg") no-repeat center center rgba(128,128,128,.05);
+    background-position:center bottom;
+    height:580px;
+    margin-top:84px;
+}
+.part1Box h2{
+    font-family:"SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size:44px;
+    font-weight:600;
+    line-height:1;
+    margin-bottom:11px;
+}
+.part1Box h3{
+    font-size:21px;
+    font-weight:400;
+    line-height:1;
+    margin-bottom:10px;
+}
+.part1Box .more a{
+    font-size:21px;
+    font-weight:400;
+    color:#0070c9;
+    
+    
+}
+.part1Box .more{
+    position:absolute;
+    left:50%;
+    top:250px;
+    margin-left:-120px;
+    margin-top:20px;
+}
+.part1Box .more a:hover{
+    border-bottom:1.5px solid #0070c9;
+}
+.back{
+    position:absolute;
+    left:0;
+    top:88px;
+    width:100%;
+    height:580px;
+
+}
+.part1Box .word b{
+    width:20px;
+    height:20px;
+    display:inline-block;
+    border:2px solid #111;
+    font-size:24px;
+    border-radius:5px 5px;
+}
+.part1Box .word b, .part1Box .word h3{
+    vertical-align:top;
+}
+.part2Box{
+    text-align:center;
+    padding-top:47px;
+    box-sizing:border-box;
+    background:url("../images/2.jpg") no-repeat center center rgba(128,128,128,.05);
+    background-position:center bottom;
+    height:580px;
+    margin-top:20px;
+}
+.part2Box h2{
+    font-family:"SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size:44px;
+    font-weight:600;
+    line-height:1;
+    margin-bottom:11px;
+}
+.part2Box h3{
+    font-size:21px;
+    font-weight:400;
+    line-height:1;
+    margin-bottom:10px;
+}
+.part2Box .more a{
+    font-size:21px;
+    font-weight:400;
+    color:#0070c9;
+    
+    
+}
+.part2Box .more{
+    position:absolute;
+    left:50%;
+    top:850px;
+    margin-left:-120px;
+    margin-top:20px;
+}
+.part2Box .more a:hover{
+    border-bottom:1.5px solid #0070c9;
+}
+.back2{
+    position:absolute;
+    left:0;
+    top:648px;
+    width:100%;
+    height:580px;
+
+}
+.part2Box .word b{
+    width:20px;
+    height:20px;
+    display:inline-block;
+    border:2px solid #111;
+    font-size:24px;
+    border-radius:5px 5px;
+}
+.part2Box .word b, .part2Box .word h3{
+    vertical-align:top;
+}
+.part3Box{
+    text-align:center;
+    padding-top:47px;
+    box-sizing:border-box;
+    background:url("../images/3.jpg") no-repeat center center rgba(128,128,128,.05);
+    background-position:center bottom;
+    height:580px;
+    margin-top:20px;
+}
+.part3Box h2{
+    font-family:"SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size:44px;
+    font-weight:600;
+    line-height:1;
+    margin-bottom:11px;
+}
+.part3Box h3{
+    font-size:21px;
+    font-weight:400;
+    line-height:1;
+    margin-bottom:10px;
+}
+.part3Box h3:nth-child(2){
+    color:red;
+}
+.part3Box .more a{
+    font-size:21px;
+    font-weight:400;
+    color:#0070c9;
+    
+    
+}
+.part3Box .more{
+    position:absolute;
+    left:50%;
+    top:1430px;
+    margin-left:-120px;
+    margin-top:20px;
+}
+.part3Box .more a:hover{
+    border-bottom:1.5px solid #0070c9;
+}
+.back3{
+    position:absolute;
+    left:0;
+    top:1228px;
+    width:100%;
+    height:580px;
+
+}
+.part3Box .word b{
+    width:20px;
+    height:20px;
+    display:inline-block;
+    font-size:36px;
+    margin-right:30px;
+    margin-top:2px;
+}
+.part3Box .word b, .part3Box .word h3{
+    vertical-align:top;
+}

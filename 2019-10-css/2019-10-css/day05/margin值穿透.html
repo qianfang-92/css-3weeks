@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       .par{
+           width:300px;
+           height:300px;
+           background:green;
+           /* 第一种解决办法 */
+           /* border-top:1px solid transparent; */
+           /* 第二种 */
+           /* padding-top:50px; */
+           /* padding-top:1px; */
+
+           /* 第三种 */
+           overflow:hidden;
+       }
+       .child{
+           width:100px;
+           height:100px;
+           background:gold;
+           margin-top:50px;
+       }
+
+       /*   一个大盒子里面包含一个小盒子，如果大盒子没有设置border-top 或者padding-top ，我给小盒子设置margin-top，会造成大盒子跟着小盒子一起下移*/
+    </style>
+</head>
+<body>
+    <div class="par">
+        <div class="child"></div>
+    </div>
+</body>
+</html>

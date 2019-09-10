@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="iconfont.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .clearfix:after{
+            content:"";
+            font-size:0;
+            display:block;
+            height:0;
+            visibility:hidden;
+            clear:both;
+        }
+        /* 兼容ie盒子的*/
+        .clearfix{
+            *zoom:1;
+        }
+        ul,ol{
+            list-style:none;
+        }
+        a{
+            text-decoration:none;
+            color:#b0b0b0;
+        }
+        a:hover{
+            color:white;
+        }
+        .nv{
+            height:40px;
+            background:#333;
+            line-height:40px;
+            font-size:12px;
+        }
+        .md{
+            width:1226px;
+            margin:0 auto;
+        }
+        .left{
+            float:left;
+        }
+        .right{
+            float:right;
+        }
+        .left>span{
+            color:#424242;
+            margin-left:3.6px;
+            margin-right:3.6px;
+        }
+        .left>a,span{
+            float:left;
+        }
+        .right>a,span{
+            float:left;
+        }
+        .right>span{
+            color:#424242;
+            margin-left:3.6px;
+            margin-right:3.6px;
+        }
+        .cart{
+            width:120px;
+            height:40px;
+            background:#424242;
+            text-align:center;
+            margin-left:15px;
+        }
+        .cart:hover{
+            background:white;
+            color:black;
+        }
+        .right .iconfont{
+            color:chocolate;
+            height:58px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="nv">
+        <div class="md clearfix">
+            <div class="left clearfix">
+                <a href="">小米商城</a>
+                <span>|</span>
+                <a href="">MIUI</a>
+                <span>|</span>
+                <a href="">云服务</a>
+                <span>|</span>
+                <a href="">金融</a>
+                <span>|</span>
+                <a href="">有品</a>
+                <span>|</span>
+                <a href="">小爱开放平台</a>
+                <span>|</span>
+                <a href="">企业团购</a>
+                <span>|</span>
+                <a href="">资质证明</a>
+                <span>|</span>
+                <a href="">协议规则</a>
+                <span>|</span>
+                <a href="">下载app</a>
+                <span>|</span>
+                <a href="">Select Region</a>
+            </div>
+            <div class="right clearfix">
+                <a href="">登陆</a>
+                <span>|</span>
+                <a href="">注册</a>
+                <a href="" class="cart"> <i class="iconfont icon-gouwuchekong"></i> 购物车</a>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul,ol{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+.clearfix:after{
+    display:block;
+    content:"";
+    height:0;
+    font-size:0;
+    visibility:hidden;
+    clear:both;
+}
+.clearfix{
+    *zoom:1;
+}
+.elecBox{
+    background:lavenderblush;
+}
+.elec{
+    margin:0 auto;
+    width:1226px;
+    background:lightgreen;
+}
+.top{
+    height:58px;
+    background:lightcoral;
+    line-height:58px;
+}
+.bottom{
+    height:614px;
+    background:lightblue;
+}
+.top h2{
+    float:left;
+    font-size:22px;
+    font-weight:200;
+    color:#333;
+}
+.top div{
+    float:right;
+}
+.top a{
+    color:#424242;
+    border-bottom:2px solid transparent;
+}
+.top a:hover{
+    color:#ff6700;
+    border-bottom:2px solid #ff6700;
+}
+.top .movie{
+    margin-left:30px;
+}
+.bottom .tele{
+    float:left;
+    height:614px;
+}
+.tele li{
+    float:left;
+    width:234px;
+    height:300px;
+    background:rgb(207, 175, 115);
+    margin-left:14px;
+    margin-bottom:14px;
+}
+.tele .last-top,.tele .last-bottom{
+    width:234px;
+    height:143px;
+}
+.tele .first,.tele .six{
+    margin-left:0;
+}
+.tele .nomb{
+    margin-bottom:0;
+}
+.tele .first{
+    background:url("../images/1-1.webp") 100% 100%;
+    background-size:100% 100%;
+}

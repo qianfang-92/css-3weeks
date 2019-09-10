@@ -1,0 +1,185 @@
+.clearfix:after {
+    display: block;
+    height: 0;
+    content: "";
+    clear: both;
+    overflow:hidden;
+    visibility:hidden;
+    font-size:0;
+}
+.clearfix{
+    *zoom:1
+}
+*{
+    margin:0;
+    padding:0;
+}
+.md{
+    margin:0 auto;
+    width:1226px;
+}
+.bannerBox{
+    height:460px;
+    background:lightblue;
+    position:relative;
+}
+.bannerLists a{
+    width:100%;
+    height:460px;
+    display:block;
+    background:url("../images/1.jpg") no-repeat center center;
+    background-size:cover;
+}
+.bannerBar{
+    width:234px;
+    height:460px;
+    padding:20px 0px 20px 0px;
+    background:rgba(105,101,101,.6);
+    position:absolute;
+    left:0;
+    top:0;
+    box-sizing:border-box;
+}
+.bannerBar>li{
+    font-size:14px;
+    text-indent:30px;
+    background:url("../images/arrow.png") no-repeat;
+    background-position:200px center;
+}
+.bannerBar>li:hover{
+    /* 这里不能直接用background这个复合属性，因为上一个里面有了background这个属性，如果直接用复合属性会覆盖前面的那个，导致没有了插入的图片箭头，所以用background-color这个属性来单独覆盖color这个属性 */
+    background-color:#ff6700;
+}
+.bannerBar>li>a{
+    color:#fff;
+    height:42px;
+    line-height:42px;
+    display:block;
+}
+.bannerBar .contBox{
+    width:500px;
+    height:460px;
+    background:rgba(140, 177, 201,.6);
+    position:absolute;
+    left:234px;
+    top:0;
+    display:none;
+}
+.bannerBar>li:hover>.contBox{
+    display:block;
+}
+.leftArrow,.rightArrow{
+    width:41px;
+    height:69px;
+    background:url("../images/2.png");
+    position:absolute;
+    top: 50%;
+    margin-top:-34.5px;
+
+}
+.leftArrow{
+    left:234px;
+    background-position:-83px 0;
+}
+.rightArrow{
+    right:0;
+    background-position:-125px 0;
+}
+.leftArrow:hover{
+    background-position:0 0;
+}
+.rightArrow:hover{
+    background-position:-42px 0;
+}
+.bannerBox .point{
+    position:absolute;
+    right:30px;
+    bottom:20px;
+}
+.bannerBox .point li{
+    display:inline-block;
+    margin-left:5px;
+}
+.bannerBox .point a{
+    display:block;
+    width:6px;
+    height:6px;
+    border:2px solid hsla(0, 0%, 100%, .3);
+    border-radius:50%;
+    background-color:rgba(0,0,0,.4);
+}
+.bannerBox .point a:hover{
+    border-color:#757575;
+    background-color:transparent;
+}
+.subBox>.subList{
+    height:170px;
+}
+.subBox>.subList li{
+    width:316px;
+    height:170px;
+    float:left;
+    margin-top:14px;
+    margin-left:14px;
+    background:lightgreen;
+}
+.subBox>.subList .left{
+    width:234px;
+    margin-left:0;
+    padding-top:7px;
+    box-sizing: border-box;
+    background:#5f5750;
+}
+.subBox>.subList .left li{
+    float:left;
+    width:70px;
+    height:63.3px;
+    text-align:center;
+    background:#5f5750;
+    margin-left:10px;
+    margin-top:10px;
+    border-right:1px solid #665e57;
+    border-bottom:1px solid #665e57;
+    
+}
+.subBox>.subList .left .nomb{
+    margin-left:0px;
+}
+.subBox>.subList .left a{
+    background:#5f5750;
+    color:hsla(0, 0%, 100%, .3);
+
+}
+.subBox>.subList .left a:hover{
+    color:#fff;
+}
+.subBox>.subList .left a img{
+    width:24px;
+    height:24px;
+    display:block;
+    margin:0 auto 4px;
+
+}
+.subBox>.subList .picture{
+    background:url("../images/4.jpg") no-repeat center center;
+    background-size:cover;
+    display:block;
+    width:316px;
+    height:170px;
+}
+/* 右侧固定边栏 */
+.fixed{
+    position:fixed;
+    right:0;
+    bottom:100px;
+    border:1px solid #f5f5f5;
+    width:84px;
+}
+.fixed>li{
+    height:92px;
+    width:100%;
+    border-bottom:1px solid #f5f5f5;
+}
+.fixed>li:last-child{
+    border-bottom:0;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    a{
+        text-decoration: none;
+    }
+    .main{
+        width:600px;
+        margin:0 auto;
+    }
+    .main input{
+        width:350px;
+        height:40px;
+        border:1px solid #666;
+    }
+    .item{
+        margin-bottom:20px;
+    }
+    .item>span{
+        width:100px;
+        display:inline-block;
+        text-align: right;
+        margin-right:20px;     
+    }
+    .main .code{
+        width:178px;
+    }
+    .getCode{
+        width:170px;
+        height:42px;
+    }
+    .main .choose{
+        width:13px;
+        height:13px;
+        margin-left:120px;
+        vertical-align:middle;
+
+    }
+    .read{
+        font-size:12px;
+    }
+    .read a{
+        color:#1b66c7;
+    }
+    .register{
+        width:350px;
+        height:50px;
+        background:lightblue;
+        margin-left:120px;
+        margin-top:20px;
+        color:#fff;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="item">
+                <span>用户名</span>
+                <input type="text" placeholder="请输入用户名">
+        </div>
+        <div class="item">
+                <span>手机号</span>
+                <input type="text" placeholder="可用于登录和找回密码">
+        </div>
+        <div class="item">
+                <span>密码</span>
+                <input type="password" placeholder="请设置密码">
+        </div>
+        <div class="item">
+                <span>验证码</span>
+                <input class="code" type="text" placeholder="请输入验证码">
+                <button class="getCode">获取验证码</button>
+        </div>
+        <div class="read">
+            <input type="checkbox" class="choose">阅读并接受 <a href="">《百度用户协议》</a>及<a href="">《百度隐私权保护声明》</a>
+        </div>
+        <button class="register">注册</button>
+    </div>
+</body>
+</html>

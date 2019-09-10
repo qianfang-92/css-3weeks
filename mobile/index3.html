@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        .contain {
+            width: 80%;
+            /* height: 140px; */
+            margin: 100px auto;
+            display: flex;
+            justify-content: stretch;
+            align-items: stretch;
+        }
+        .contain>li{
+            flex-grow: 1;
+            display:flex;
+            justify-content:flex-start;
+            align-items:center;
+        }
+        .contain>li:nth-child(2){
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .contain>li:last-child{
+            justify-content:flex-end;
+        }
+        img{
+            float:left;
+            width:50px;
+            height:50px;
+        }
+        li>div{
+            float:left;
+        }
+        li>div>h5{
+            width:100%;
+        }
+        li>div>p{
+            width:100%;
+        }
+        li>div>h5,li>div>p{
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="contain">
+        <li>
+            <img src="images/7.png" alt="">
+            <div>
+                <h5>微信小程序</h5>
+                <p>微信扫一扫，直接用车</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/8.png" alt="">
+            <div>
+                <h5>红包车</h5>
+                <p>骑摩拜，能赚钱</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/9.png" alt="">
+            <div>
+                <h5>摩范分</h5>
+                <p>文明骑行，信用生活</p>
+            </div>
+        </li>
+    </ul>
+</body>
+
+</html>

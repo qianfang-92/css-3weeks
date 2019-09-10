@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table{
+            width:500px;
+            /* 合并边框线 */
+            border-collapse:collapse;
+            /* 表格的宽度平均分布，但是先要有宽度 */
+            table-layout:fixed;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+
+    <table border="1"  >
+        <caption>成绩表</caption>
+        <tr>
+                <th>语文成绩单</th>
+                <th>数学</th>
+                <th>外语</th>
+                <th>政治</th>
+        </tr>
+        <tr>
+            <td rowspan="2">100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <!-- 合并列，col代表列 -->
+            <td colspan="4">总分：XX</td>
+        </tr>
+        <!-- 简单格式的表格,如果把每行顺序打乱,浏览器就分不清表头了 -->
+       
+    </table>
+</body>
+</html>

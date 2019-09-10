@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;padding:0;
+        }
+        .contain{
+            margin:100px auto;
+            width:500px;
+            height:300px;
+            border:1px dashed orangered;
+        }
+        .top,.last{
+           height:150px;
+           vertical-align:top; 
+           border:1px solid black;
+        }
+        .clearfix:after{
+        content:"";
+        font-size:0;
+        display:block;
+        height:0;
+        visibility: hidden;
+        clear: both;
+    }
+    .clearfix{
+        *zoom:1;
+    }
+        .left1,.left2{
+            width:400px;
+            float:left;
+        }
+        .right1,.right2{
+            width:100px;
+            float:right;
+            height:150px;
+        }
+        .box1,.box2,.box4,.box5{
+            background:cornflowerblue;
+            width:100px;
+            height:150px;
+        }
+        .box1,.box4{
+            float:left;
+
+        }
+        .box3,.box5{
+            float:right;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="top clearfix">
+            <div class="left1">
+                <div class="box1"></div>
+                <div class="box2"></div>
+            </div>
+            <div class="right1"></div>
+        </div>
+        <div class="last clearfix">
+            <div class="left2">
+                <div class="box4"></div>
+                <div class="box5"></div>
+            </div>
+            <div class="right2"></div>
+        </div>
+    </div>
+</body>
+</html>

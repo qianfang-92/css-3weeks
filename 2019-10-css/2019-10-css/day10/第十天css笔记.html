@@ -1,0 +1,164 @@
+<!DOCTYPE html><html><head><title>第十天css笔记</title><meta charset='utf-8'><link href='https://cdn.maxiang.io/res-min/themes/marxico.css' rel='stylesheet'><style>
+.note-content  {font-family: ADMUI3Lg, 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, Song, sans-serif;}
+
+</style></head><body><div id='preview-contents' class='note-content'>
+                        
+                    
+
+<div><div class="toc"><div class="toc">
+<ul>
+<li><ul>
+<li><ul>
+<li><a href="#第十天css笔记">第十天css笔记</a><ul>
+<li><a href="#transform常用的几个值">transform常用的几个值</a></li>
+<li><a href="#过渡动画">过渡动画</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<h3 id="第十天css笔记">第十天css笔记</h3>
+
+<h4 id="transform常用的几个值">transform常用的几个值</h4>
+
+<p>1、位移：translate</p>
+
+<ul><li><p>水平位移：transform：translateX(100px); </p></li>
+<li><p>垂直位移：transform:translateY(100px);</p></li>
+<li><p>复合位移：transform：translate(100px,200px);</p></li>
+</ul>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">'UTF-8'</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'keywords'</span> <span class="hljs-attr">content</span>=<span class="hljs-string">'关键词'</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'description'</span> <span class="hljs-attr">content</span>=<span class="hljs-string">'描述的文字'</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css"></span>
+</div><div class="hljs-line"><span class="css">     *{</span>
+</div><div class="hljs-line"><span class="css">            <span class="hljs-attribute">margin</span>:<span class="hljs-number">0</span>;<span class="hljs-attribute">padding</span>:<span class="hljs-number">0px</span>;</span>
+</div><div class="hljs-line"><span class="css">      }</span>
+</div><div class="hljs-line"><span class="css">    <span class="hljs-selector-class">.box</span>{</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-attribute">width</span>:<span class="hljs-number">200px</span>;</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-attribute">height</span>:<span class="hljs-number">200px</span>;</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-attribute">background</span>:green;</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-comment">/* 水平移动500px */</span></span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-comment">/* transform: translateX(500px); */</span></span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-comment">/* 垂直移动500px */</span></span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-comment">/* transform:translateY(500px); */</span></span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-comment">/* </span></span>
+</div><div class="hljs-line"><span class="css">          第一个值代表的是水平</span>
+</div><div class="hljs-line"><span class="css">          第二个值代表的是垂直</span>
+</div><div class="hljs-line"><span class="css">         */</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-attribute">transform</span>:<span class="hljs-built_in">translate</span>(200px,300px);</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-comment">/* </span></span>
+</div><div class="hljs-line"><span class="css">        如何让一个元素在屏幕中水平垂直居中第二种方法</span>
+</div><div class="hljs-line"><span class="css">        position:absolute;</span>
+</div><div class="hljs-line"><span class="css">        left:50%;</span>
+</div><div class="hljs-line"><span class="css">        top:50%;</span>
+</div><div class="hljs-line"><span class="css">        transform:translate(-50%,-50%); </span>
+</div><div class="hljs-line"><span class="css">        */</span>
+</div><div class="hljs-line"><span class="css">    }</span>
+</div><div class="hljs-line"><span class="css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</div><div class="hljs-line"><wbr>
+</div></code></pre>
+
+<p>2、scale 缩放</p>
+
+<ul><li><p>transform:scale(x,y),x代表的是缩放宽度的x倍，y代表的是缩放高度的y倍</p></li>
+<li><p>transform:scale(n);代表的同时缩放宽度和高度的n倍</p></li>
+</ul>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">'UTF-8'</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'keywords'</span> <span class="hljs-attr">content</span>=<span class="hljs-string">'关键词'</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'description'</span> <span class="hljs-attr">content</span>=<span class="hljs-string">'描述的文字'</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>scale 缩放<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css"></span>
+</div><div class="hljs-line"><span class="css">    *{</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-attribute">margin</span>:<span class="hljs-number">0</span>;<span class="hljs-attribute">padding</span>:<span class="hljs-number">0</span>;</span>
+</div><div class="hljs-line"><span class="css">    }</span>
+</div><div class="hljs-line"><span class="css">    <span class="hljs-selector-class">.box</span>{</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-attribute">width</span>:<span class="hljs-number">200px</span>;</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-attribute">height</span>:<span class="hljs-number">200px</span>;</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-attribute">background</span>:green;</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-comment">/* 第一个值：代表的是缩放宽度的倍数 </span></span>
+</div><div class="hljs-line"><span class="css">           第二个值：代表的是缩放的高度的倍数</span>
+</div><div class="hljs-line"><span class="css">        */</span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-comment">/* transform:scale(2,0.5); */</span></span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-comment">/* 一个值的时候代表，宽和高同时缩放n倍 */</span></span>
+</div><div class="hljs-line"><span class="css">        <span class="hljs-attribute">transform</span>:<span class="hljs-built_in">scale</span>(0.5);</span>
+</div><div class="hljs-line"><span class="css">    }</span>
+</div><div class="hljs-line"><span class="css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+</div><div class="hljs-line">   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</div><div class="hljs-line"><wbr>
+</div></code></pre>
+
+<p>3、rotate:代表旋转多少度，可以是负值,单位是deg</p>
+
+<ul><li><p>transform:rotateX(45deg);代表的是围绕着x轴旋转45deg; （想象翻单杠的运动轨迹）</p></li>
+<li><p>transform:rotateY(45deg)；代表的是围绕着y轴进行旋转45deg;(想象跳钢管舞)</p></li>
+<li><p>transform:rotateZ(45deg);代表围绕着z轴进行旋转45deg；（大转盘，垂着转盘的轴） <br>
+4、transform-origin：x,y; 改变元素变形时候的作用原点。</p></li>
+<li><p>水平方向：left、 center、 right；</p></li>
+<li><p>垂直方向：top、center、bottom；</p></li>
+</ul>
+
+<p>5、transform-style:</p>
+
+<ul><li><p>flat 默认值（平面的）;</p></li>
+<li><p>preserve-3d;代表的是三维空间，立体的；</p></li>
+</ul>
+
+<p>6、perspective 代表观察者距离舞蹈的距离，通俗可以理解为照相机的景深。例如：perspective:1600px; 它下面的元素会有一个透视的效果。</p>
+
+<h4 id="过渡动画">过渡动画</h4>
+
+<blockquote>
+  <p>transition <br>
+  </p><ul><li><p>动画的属性：  transition-property:height;</p></li>
+  <li><p>动画执行的时间： transition-duration: 2s;</p></li>
+  <li><p>运动曲线： transition-timing-function: linear;</p></li>
+  <li><p>延迟： transition-delay: 1s;</p></li>
+
+ 
+</blockquote>
+<h4 >animation</h4>
+<blockquote>
+<ul>
+    <li>animation-name	指定要绑定到选择器的关键帧的名称</li>
+    <li>animation-duration	动画指定需要多少秒或毫秒完成</li>
+    <li>animation-timing-function	设置动画将如何完成一个周期</li>
+    <li>animation-delay	设置动画在启动前的延迟间隔。</li>
+    <li><p>动画执行的次数：animation-iteration-count ，可以是具体的数字，比如3代表就是执行3次；还可以设置成无限循环 infinite;</p></li>
+    <li><p>设置动画的状态：animation-fill-mode；</p></li> 
+    <li>forwards:当动画结束，停留在最后一帧</li>
+    <li><p>backwards:在动画中有延迟的时候，设置backwards，会迅速的跑到第一桢开始执行动画</p></li>
+   <li><p>both:当设置的有延迟的时候，动画迅速以第一桢开始，当动画结束的时候，停留在最后一帧。</p>
+
+<blockquote>
+  <p>简写：transition:all 2s linear 1s;</p>
+</blockquote></li></ul>
+</div></body></html>

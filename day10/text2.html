@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background:lavender;
+        }
+        .contain{
+            width:500px;
+            height:500px;
+            border:2px dashed firebrick;
+            margin:100px auto;
+        }
+        .contain div{
+            width:50px;
+            height:50px;
+            background:darkolivegreen;
+            /* 第一个是运动的名称 第二个时间 第三个是运动的形式 第四个是运动的次数（infinite是无限次 forwards是让动画停留在最后一帧，不回到初始位置） */
+            animation: run 4s linear infinite;
+        }
+        @keyframes run{
+            0%{
+                transform:translate(0,0);
+            }
+            25%{
+                transform:translate(450px,0);
+                background:darkred;
+            }
+            50%{
+                transform:translate(450px,450px);
+                background:darkkhaki;
+            }
+            75%{
+                transform:translate(0,450px);
+                background:darkgreen;
+            }
+            100%{
+                transform:translate(0,0);
+                background:darkgoldenrod;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div></div>
+    </div>
+</body>
+</html>

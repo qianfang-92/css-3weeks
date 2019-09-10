@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background:black;
+        }
+        .box{
+            width:200px;
+            height:312px;
+            background:url("dead.png");
+            margin-top:100px;
+            animation:run 1s steps(10) infinite,go 10s linear infinite;
+            
+        }
+        @keyframes run{
+            100%{
+                background-position:-2000px 0;
+            }
+        }
+        @keyframes go{
+            0%{
+                /* 100vw是指100%的屏幕的宽，w是指width */
+                transform:translate(100vw);
+                transform:translate(1536px,0)；
+            }
+            100%{
+                transform:translate(-200px,0);
+            }
+        }
+    </style>
+
+</head>
+<body>
+        <div class="box"></div>
+</body>
+</html>

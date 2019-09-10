@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height:200px;
+            background:green;
+            /* transform: translate(100px,100px); */
+            /* transform: scale(2); */
+            /* transform-origin:right top; */
+           
+        }
+        .box{
+            /* transform:rotateX(45deg); */
+            /* transform:rotateZ(45deg);
+            transition:all 1s linear; */
+            /* height:500px;
+            width:500px; */
+            /* transition:height 1s linear,width 1s linear; */
+            /* transition:all 1s linear 1s; */
+            animation: run 1s linear 1s  both;
+            
+        }
+
+        @keyframes run {
+            0%{
+                transform: translate(0,100px)
+            }
+            100%{
+                transform:translate(100px,300px)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

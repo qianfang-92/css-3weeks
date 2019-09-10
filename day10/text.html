@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width:510px;
+            height:286px;
+            border:1px solid firebrick;
+            position:relative;
+            margin:100px auto;
+            overflow:hidden;
+        }
+        img{
+            position:absolute;
+            left:50%;
+            top:50%;
+            margin-left:-127px;
+            margin-top:-71px;
+            width:255px;
+            height:143px;
+            transition:all 1s linear;
+        }
+        img:hover{
+            transform:scale(2);
+            position:absolute;
+            left:0;
+            top:0;
+            margin-left:0;
+            margin-top:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="monkey.png" alt="">
+    </div>
+</body>
+</html>

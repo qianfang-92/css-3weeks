@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* 所有儿子元素中的第几个 */
+    .main>p:nth-child(3){
+        background:green;
+    }
+    .main>h2:nth-last-child(1){
+        background:pink;
+    }
+    .main>h2:first-child{
+        background:cadetblue;
+    }
+    .main>h2:last-child{
+        background:darkorange;
+    }
+    .main>p:nth-of-type(odd){
+        background:darkorchid;
+    }
+    /* .main>p:nth-last-of-type(1){
+        background:darkturquoise;
+    } */
+    .main>p:last-of-type{
+        color:cadetblue;
+        font-size:50px;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>h2</h2>
+        <h2>h2</h2>
+        <p>p1</p>
+        <p>p1</p>
+        <p>p1</p>
+        <p>p1</p>
+        <p>p1</p>
+        <h2>h2</h2>
+    </div>
+</body>
+</html>

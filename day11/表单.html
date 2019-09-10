@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        textarea{
+            resize:none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 文本输入框 minlength是指最小字符长度 maxlength是指最大的字符长度-->
+    <input type="text" minlength="3" maxlength>
+    <!-- 密码 -->
+    <input type="password">
+    <!-- 提交 -->
+    <input type="submit">
+    <!-- 重置 -->
+    <input type="reset">
+    <!-- 按钮 -->
+    <input type="button" value="支付">
+    <!-- 单选 -->
+    <input type="radio">
+    <!-- 多选 -->
+    <input type="checkbox">
+    <!--  -->
+    <button type="button">按钮</button>
+    <textarea name="" id="" cols="50" rows="10">评论框</textarea>
+    <select name="" id="">
+        <option value=""selected >保定</option>
+        <option value="" disabled >郑州</option>
+    </select>
+    <!-- 新增 HTML5 -->
+    <div>
+        <form action="">
+          <!-- 数字 value 里是默认的值  min是限定最小的值是10  max是限定的最大的值-->
+          <input type="number" value="10" min="10" max="13">
+          <!-- 搜索 在移动端上能够调取出来软键盘 -->
+          <input type="search">
+          <!-- 颜色面板 -->
+          <input type="color">
+          <!-- 范围 -->
+          <input type="range">
+          <!-- 上传文件 -->
+          <input type="file">
+          <!-- 日期 -->
+          <input type="date">
+          <!-- 电话  在移动端能够调出打电话的界面 -->
+          <input type="tel">
+          <!-- 邮箱 在提交的时候会校验，限制输入的格式，必须是邮箱的格式，不然提交不了-->
+          <input type="email">
+        </form>
+    </div>
+    <div>
+        <form action="">
+            <input type="number">
+            <input type="search">
+            <input type="color">
+            <input type="range">
+            <input type="file">
+            <input type="date">
+            <input type="tel">
+            <input type="email">
+        </form>
+    </div>
+</body>
+</html>

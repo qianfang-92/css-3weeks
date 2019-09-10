@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width:100px;
+            height:100px;
+            background:darkgoldenrod;
+            /* forwards让动画停留在最后一帧 */
+            /* animation: run 5s linear forwards; */
+            /* 如果动画设置了延迟，backwards会让动画迅速的以第一帧开始运动 */
+            animation:run 1s linear 1s backwards;
+            /* both是 forwards和backwards的综合，既迅速从第一帧开始，又在动画最后停留在最后一帧不回到原地 */
+            animation:run 1s linear 1s both;
+        }
+        @keyframes run{
+            0%{
+                transform:translate(0,0);
+            }
+            50%{
+                background:firebrick;
+                transform:translate(200px,300px);
+            }
+            100%{
+                background:teal;
+                transform:translate(400px,600px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

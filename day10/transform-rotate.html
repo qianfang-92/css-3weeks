@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width:200px;
+            height:200px;
+            background:lightcoral;
+            margin:100px auto;
+            /* 旋转的作用点的位置可以改变，仍然是水平轴和垂直轴来区分 */
+            transform-origin:right bottom;
+            
+        }
+        .box:hover{
+            /* 沿着X轴旋转45度 */
+            transform:rotateX(45deg);
+            /* 沿着Y轴旋转45度 */
+            transform:rotateY(45deg);
+            /* 沿着Z轴旋转45度 */
+            transform:rotateZ(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

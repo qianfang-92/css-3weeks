@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;padding:0;
+        }
+        .box{
+            width:100px;
+            height:100px;
+            background:gold;
+        }
+        /* ---600    1000---- */
+        @media screen and (max-width:600px) {
+            .box{
+                background:pink;
+            }
+        }
+        @media screen and (min-width:601px) and (max-width:999px){
+           .box{
+               background:darkorange;
+           }
+        }
+        @media screen and (min-width:1000px){
+            .box{
+                background:deepskyblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+   <div class="box"></div>
+</body>
+</html>

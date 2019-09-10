@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul,ol{
+            list-style:none;
+        }
+        a{
+            text-decoration:none;
+        }
+        .clearfix:after{
+        content:"";
+        font-size:0;
+        display:block;
+        height:0;
+        visibility: hidden;
+        clear: both;
+       }
+       .clearfix{
+        *zoom:1;
+       }
+       .main{
+           background:#fff;
+           height:1000px;
+       }
+       .md{
+           width:1226px;
+           height:1000px;
+           background:#fff;
+           margin:100px auto;
+       }
+       .top{
+           height:57.6px;
+       }
+       .bottom{
+           height:900px;
+       }
+       .bottom>.left{
+           width:234px;
+           height:614px;
+           float:left;
+       }
+       .bottom>.right{
+           width:992px;
+           height:614px;
+           float:left;
+       }
+       .right>li{
+           width:234px;
+           height:300px;
+           background:sandybrown;
+           float:left;
+           margin-left:14px;
+       }
+       .bottom .bottom{
+           margin-top:14px;
+       }
+       .top>h3{
+           height:57.6px;
+           line-height:57.6px;
+           float:left;
+           font-weight:normal;
+           font-size:22px;
+           color:#333;
+       }
+       .top>a{
+           height:57.6px;
+           line-height:57.6px;
+           float:right;
+           font-size:16px;
+           color:#424242;
+       }
+       .top>a:hover{
+           color:orangered;
+       }
+       .bottom>a{
+           width:234px;
+           height:263.3px;
+       }
+       li img{
+           width:160px;
+           height:160px;
+           margin-left:35px;
+           margin-top:20px;
+       }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="md">
+            <div class="top clearfix">
+                <h3> 手机</h3>
+                <a href="">查看全部></a>
+            </div>
+            <div class="bottom clearfix">
+                <a href="" class="left"> <img src="../day04/小米.webp" alt=""> </a>
+                <ul class="right">
+                    <li class="li1 clearfix">
+                        <a href="">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/beee478168e5c4fd0d66369386fddbbe.jpg?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                            <h3></h3>
+                        </a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li class="bottom li5"></li>
+                    <li class="bottom"></li>
+                    <li class="bottom"></li>
+                    <li class="bottom"></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

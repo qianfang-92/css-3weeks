@@ -1,0 +1,106 @@
+.md{
+    width:1226px;
+    margin:0 auto;
+}
+.title{
+    width:1226px;
+    height:54px;
+    line-height:54px;
+    margin:14px 0px 14px 0px;
+}
+.title .left{
+    float:left;
+    width:178px;
+    height:54px;
+    background:url("../images/title.png") no-repeat center center;
+    margin-right:85px;
+}
+.title .middle{
+    float:left;
+    width:600px;
+    height:54px;
+    line-height:54px;
+}
+.title .middle li{
+    float:left;
+    font-size:14px;
+    color:#2b7dd1;
+    margin-right:40px;
+}
+.title .right{
+    float:right;
+    width:300px;
+    height:54px;
+}
+.title .right i{
+    background:url("../images/cart.png");
+    float:left;
+    width:24px;
+    height:22px;
+    margin-top:14px;
+    margin-right:5px;
+}
+.title .right i,.title .right span{
+    vertical-align:middle;
+}
+.title .right span{
+    font-size:14px;
+    color:#666767;
+    margin-right:43px;
+    height:15px;
+    float:left;
+}
+.top{
+    background:url("../images/topBackground.png") no-repeat center center;
+    background-size:100% 100%;
+    height:358px;
+    margin-bottom:55px;
+}
+.top .left{
+    width:241px;
+    height:358px;
+    background-color:hsla(0, 0%, 100%, .2);
+}
+.top .left li{
+    float:left;
+    height:70px;
+    width:190px;
+    line-height:70px;
+    margin-left:36px;
+    font-size:14px;
+    color:#fdfdfe;
+    border-bottom:1px solid #fdfdfe;
+    background:url("../images/arrow.png") no-repeat center center;
+    background-position:174px center;
+}
+.top .left .last{
+    border-bottom:none;
+}
+.part1{
+    height:244px;
+}
+.part1 h3{
+    margin:21px 0 21px 0;
+}
+.part1 .list{
+    width:1226px;
+    height:200px;
+    line-height:200px;
+    background:lightblue;
+}
+.part1 .list li{
+    background:url("../images/monkey.png") no-repeat center top;
+    background-position:center center;
+    height:200px;
+    width:252px;
+    float:left;
+    margin-right:72px;
+}
+.part1 .list .last{
+    margin-right:0;
+}
+.part1 .list div{
+    height:112px;
+    margin-top:88px;
+    background:white;
+}

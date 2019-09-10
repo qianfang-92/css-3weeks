@@ -1,0 +1,250 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul,ol{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:#424242;
+}
+.clearfix:after{
+    display:block;
+    content:"";
+    height:0;
+    font-size:0;
+    visibility:hidden;
+    clear:both;
+}
+.clearfix{
+    *zoom:1;
+}
+body{
+    background:#f5f5f5;
+}
+.phoneBox,.homeBox,.homeBannerBox,.phoneBannerBox,.intelligentBannerBox,.intelligentBox{
+    background:#f5f5f5;
+}
+.md{
+    width:1226px;
+    margin:0 auto;
+}
+.phone .top{
+    height:58px;
+    line-height:58px;
+}
+.bottom{
+    height:614px;
+}
+h2{
+    float:left;
+    font-weight:200;
+    font-size:22px;
+    height:58px;
+    line-height:58px;
+}
+.phone .more{
+    float:right;
+    font-size:16px;
+}
+.phone .more:hover{
+    color:#ff6700;
+}
+.phone .left{
+    width:234px;
+    height:614px;
+    background:url("../images/1.webp") 100% 100%;
+    background-size:100% 100%;
+    float:left;
+
+}
+.phone .right{
+    float:left;
+    width:992px;
+    height:614px;
+}
+.phone .right li{
+   width:234px;
+   height:300px;
+   float:left;
+   margin-left:14px;
+   margin-bottom:14px;
+   text-align:center;
+   background:#fff;
+}
+.phone .right .nomb{
+    margin-bottom:0;
+}
+li img{
+    width:160px;
+    height:160px;
+    margin-top:20px;
+}
+li a h3{
+    font-size:14px;
+    font-weight:400;
+    color:#333;
+    margin-top:20px;
+}
+li a .middle{
+    font-size:12px;
+    color:#b0b0b0;
+    height:18px;
+    line-height:18px;
+    margin-bottom:15px;
+}
+li a p>span{
+    color:#ff6700;
+}
+li a p del span{
+    color:#b0b0b0;
+}
+.home h2{
+    height:58px;
+    line-height:58px;
+}
+.home .homeNav{
+    float:right;
+    margin-top:19px;
+}
+.homeNav li{
+    float:left;
+    margin-left:30px;
+    /* 小手状 */
+    cursor:pointer;
+}
+.homeNav li:hover{
+    color:#ff6700;
+    border-bottom:2px solid #ff6700;
+}
+.home .left{
+    width:234px;
+    float:left;
+}
+.home .bottom li{
+    height:300px;
+    width:234px;
+    background:white;
+    margin-left:14px;
+    margin-bottom:14px;
+    text-align:center;
+}
+.home .right{
+    float:right;
+    width:992px;
+}
+.home .left li{
+    margin-left:0;
+}
+.home .right li{
+    float:left;
+}
+.home .bottom .last{
+    height:143px;
+}
+.home .bottom .left a{
+    float:left;
+    width:234px;
+    height:300px;
+}
+.home .bottom .left .p1{
+    background:url("../images/1-1.webp");
+    background-size:100% 100%;
+}
+.home .bottom .left .p2{
+    background:url("../images/1-2.webp");
+    background-size:100% 100%;
+}
+.home .bottom .right .last img{
+    float:right;
+    width:80px;
+    height:80px;
+    margin-right:20px;
+}
+.home .bottom .right .last div{
+    float:left;
+    margin-left:30px;
+    margin-top:30px;
+}
+.homeBanner img,.phoneBannerBox img,.intelligentBanner img{
+    width:1226px;
+    height:120px;
+}
+.homeBannerBox,.phoneBannerBox,.intelligentBannerBox{
+    margin-top:22px;
+    margin-bottom:22px;
+}
+
+.intelligent .intelligentNav{
+    float:right;
+    margin-top:19px;
+}
+.intelligent .intelligentNav li{
+    float:left;
+    margin-left:30px;
+    cursor: pointer;
+}
+.intelligent .intelligentNav li a:hover{
+    color:#ff6700;
+    border-bottom:2px solid #ff6700;
+}
+.intelligent .bottom .left{
+    width:234px;
+    float:left;
+}
+.intelligent .bottom .right{
+    width:992px;
+    float:right;
+}
+.intelligent .bottom li{
+    width:234px;
+    height:300px;
+    margin-left:14px;
+    margin-bottom:14px;
+    float:left;
+    background:white;
+    text-align:center;
+}
+.intelligent .bottom .last{
+    height:143px;
+    width:234px;
+}
+.intelligent .bottom .left li{
+    margin-left:0;
+}
+.intelligent .bottom .left .p1{
+    background:url("../images/1-8.webp");
+    background-size:100% 100%;
+}
+.intelligent .bottom .left a{
+    width:234px;
+    height:300px;
+    float:left;
+}
+.intelligent .bottom .left .p2{
+    background:url("../images/1-9.webp");
+    background-size:100% 100%;
+}
+.intelligent .bottom .right h3{
+    font-size:14px;
+    font-weight:400;
+    color:#333;
+    margin:18px 10px 2px;
+}
+.intelligent .bottom .right .desc{
+    font-size:12px;
+    height:18px;
+    color:#b0b0b0;
+    margin:0 10px 10px 10px;
+}
+.intelligent .bottom .right .last img{
+    width:80px;
+    height:80px;
+    float:left;
+    margin:30px 0 15px 20px;
+}
+.intelligent .bottom .right .last div{
+    float:left;
+    margin:30px 0 15px 20px;
+}

@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#424242;
+}
+.clearfix:after{
+    display: block;
+    content:"";
+    height:0;
+    font-size:0;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix{
+    *zoom:1;
+}
+/* 版心 */
+.md{
+    width:1226px;
+    margin:0 auto;
+}
+.phoneBox,.homeBox{
+    background:lavender;
+}
+.phone .top{
+    height:58px;
+    line-height:58px;
+    
+}
+
+ h2{
+    float:left;
+    font-size:22px;
+    font-weight: 200;
+}
+
+.phone .more{
+    float:right;
+    font-size:16px;
+}
+.phone .left{
+    width:234px;
+    height:614px;
+    background:url("../images/1.webp");
+    float:left;
+}
+.phone  .right{
+    float:left;
+    width:992px;
+    height:614px;
+    
+}
+.phone  .right li{
+    width:234px;
+    height:300px;
+    background:lightseagreen;
+    float:left;
+    margin-left:14px;
+    margin-bottom:14px;
+}
+.phone  .right .norB{
+    margin-bottom:0px;
+}
+
+.home .top{
+    height:58px;
+   
+    
+}
+.home h2{
+    line-height: 58px;
+    height:58px;
+}
+.home .bottom{
+    height:628px;
+   
+}
+.home .homeNav{
+    float:right;
+    margin-top:16px;
+}
+.homeNav li{
+    float:left;
+    margin-left:30px;
+    /* 小手状 */
+    cursor:pointer;
+    
+}
+
+.homeNav li:hover{
+   border-bottom:2px solid #ff6700;
+   color:#ff6700;
+}
+.current{
+    border-bottom:2px solid #ff6700;
+    color:#ff6700;
+}
+
+.home .left{
+    width:234px;
+    float:left;
+}
+.home .right{
+    float:left;
+    width:992px;
+}
+.home .right li{
+    float:left;
+    margin-left:14px;
+}
+.home .right .last{
+    height:143px;
+}
+.home .bottom li{
+    width:234px;
+    height:300px;
+    background:lightcyan;
+    margin-bottom:14px;
+}

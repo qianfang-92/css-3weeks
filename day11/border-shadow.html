@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+        margin:0;
+        padding:0;
+    }
+    body{
+        background:black;
+    }
+    .box{
+        width:200px;
+        height:200px;
+        border-radius:50%;
+        background:rgb(244, 245, 241);
+        /* 第一个值：阴影x轴偏移量，正值往右边偏移，负值往左边偏移
+        第二个值：y轴的偏移量 正值往下偏移，负值往上偏移
+        第三个值：阴影模糊度，值越大阴影越模糊
+        第四个值：阴影的大小 
+        第五个值：如果不写，默认是外阴影 如果写inset是内阴影*/
+        box-shadow:0px 0px 50px 10px rgb(230, 240, 180) ;
+        line-height:200px;
+        margin:30px;
+        position:relative;
+
+    }
+    img{
+        display:block;
+        width:50%;
+        height:75px;
+        opacity:0.2;
+        position:absolute;
+        left:50%;
+        top:50%;
+        margin-left:-50px;
+        margin-top:-37.5px;
+    }
+
+    </style>
+    
+</head>
+<body>
+    <div class="box">
+        <img src="../day10/love.png" alt="">
+    </div>
+</body>
+</html>

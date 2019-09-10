@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    table{
+        width:500px;
+        /* 合并边框线 */
+        border-collapse:collapse;
+        /* 表格的宽度平均分布 */
+        table-layout: fixed;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <table border="1" >
+        <tr>
+            <th>语文计算机</th>
+            <th>数学</th>
+            <th>外语</th>
+        </tr>
+        <tr>
+            <td rowspan="2">100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+               
+                <td>100</td>
+                <td>100</td>
+        </tr>
+        <tr>
+                <td colspan="3">合计:XX</td>
+        </tr>
+    </table>
+</body>
+</html>

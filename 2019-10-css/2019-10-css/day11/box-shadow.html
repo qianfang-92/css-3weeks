@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0;padding:0;
+
+    }
+    body{
+        background:#000;
+    }
+    .box{
+        width:200px;
+        height:200px;
+        border-radius: 50%;
+        background:yellow;
+        /* 
+         第一个值：阴影x轴偏移量
+         第二个值：阴影y轴的偏移量
+         第三个值：阴影模糊半径（模糊度）
+         第四个值：阴影大小
+         第五个值：阴影的颜色
+         第六个值：如果写inset 就是内阴影，不写就是外阴影
+        
+         */
+        box-shadow: 0px 0px 50px 50px darkorange inset;
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

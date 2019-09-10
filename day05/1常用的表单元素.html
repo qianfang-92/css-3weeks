@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       input,textarea{
+          /* 在点击输入框时颜色不变 */
+       outline:none;
+       /* 不准用户变换textarea的大小 */
+       resize:none;
+    }
+    </style>
+    
+</head>
+<body>
+    <form action="">
+      <!-- 文本输入框 -->
+    <!-- <input type="text" placeholder="请输入用户名">     autofocus：自动获取焦点   required：提示输入没-->
+       <input type="text" placeholder="请输入用户名" autofocus  required>
+    <!-- 密码输入框 -->
+       <input type="password" placeholder="请输入密码">
+    <!-- 提交 -->
+       <input type="submit">
+       <input type="reset" name="" id="">
+       <!--  按钮   value值是控制文字内容的 -->
+       <input type="button" value="重置">
+       <!-- 单选 -->
+       <input type="radio">
+       <!-- 多选 -->
+       <input type="checkbox">
+       <!-- button也可以用来写按钮 它默认有提交表单的功效，如果不要，就加个类型,type，就可以了-->
+       <button type="button"> 支付</button>
+        <!-- cols="100"：列有100列  rows="10"：行有100行-->
+       <textarea name="" id="" cols="30" rows="10">
+
+       </textarea>
+       <!-- 下拉框 -->
+       <select name="" id="">
+            <option value="">请选择来自的地址</option>
+            <option value="">重庆</option>
+            <!-- disabled:禁止选择 -->
+            <option value="" disabled>河北</option>
+            <!-- selected：默认选择 -->
+            <option value="" selected>河南</option>
+            <option value="" selected>光山</option>
+       </select>
+    </form>
+    <!-- <form action="">
+       <input type="text" placeholder="请输入用户名">
+       <input type="password" placeholder="请输入密码">
+       <input type="button" value="支付">
+       <input type="radio">
+       <input type="checkbox">
+       <input type="submit">
+       <input type="reset">
+    </form> -->
+    
+</body>
+</html>

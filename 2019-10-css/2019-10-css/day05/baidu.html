@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;padding:0;
+            
+        }
+    .main{
+        width:720px;
+        margin:0 auto;
+    }
+    input{
+        width:350px;
+        height:40px;
+        border:1px solid #999;
+    }
+    button{
+        border:1px solid #999;
+    }
+    span{
+        text-align:right;
+        width:100px;
+        display:inline-block;
+        margin-right:10px;
+    }
+    .item{
+        margin-bottom:20px;
+    }
+    .code{
+        width:178px;
+        height:40px;
+    }
+    .getCode{
+        width:160px;
+        height:42px;
+        border:1px solid #999;
+        display:inline-block;
+    }
+    .choose{
+        width:15px;
+        height:15px;
+        margin-left:110px;
+        vertical-align: middle;
+        
+    }
+    .read{
+        font-size:12px;
+    }
+    .regestor{
+        width:350px;
+        height:50px;
+        line-height: 50px;
+        text-align: center;
+        background:lightblue;
+        margin-left:110px;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="item">
+            <span>用户名</span>
+            <input type="text" placeholder="请输入用户名">
+        </div>
+        <div class="item">
+            <span>手机号</span>
+            <input type="text" placeholder="可用于找回密码">
+        </div>
+        <div class="item">
+            <span>密码</span>
+            <input type="text" placeholder="请设置登录密码">
+        </div>
+        <div class="item">
+            <span>验证码</span>
+            <input class="code" type="text" placeholder="请输入验证码">
+            <button class="getCode">获取短信验证码</button>
+        </div>
+        <div class="item read">
+            <input type="checkbox" class="choose">
+            阅读并接受 <a href="">《百度用户协议》</a>及
+            <a href="">《百度隐私权保护声明》</a>
+        </div>
+        <button class="regestor">注册</button>
+    </div>
+</body>
+</html>

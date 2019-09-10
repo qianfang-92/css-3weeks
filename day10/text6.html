@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        /* 让屏幕一屏，不出现滚动条 */
+        html,body{
+            width:100%;
+            height:100%;
+        }
+        body{
+            background:url("back.webp");
+            overflow:hidden;
+        }
+        .wrapper{
+            width:800px;
+            height:240px;
+            margin:400px auto;
+            animation:go 20s linear infinite;
+
+        }
+        .wrapper div{
+            float:left;
+        }
+        .monkey{
+            width:200px;
+            height:180px;
+            margin-top:35px;
+            background:url("monkey2.png") no-repeat ;
+            animation:run1 1.5s steps(8) infinite;
+        }
+        .pig{
+            width:200px;
+            height:180px;
+            margin-top:35px;
+            background:url("pig.png") no-repeat;
+            animation:run1 1.5s steps(8) infinite;
+        }
+        .horse{
+            width:170px;
+            height:240px;
+            background:url("horse.png") no-repeat;
+            animation:run2 1.5s steps(8) infinite;
+        }
+        .man{
+            width:210px;
+            height:200px;
+            margin-top:35px;
+            background:url("man.png") no-repeat;
+            animation:run3 1.5s steps(8) infinite;
+        }
+        @keyframes run1{
+            100%{
+                background-position:-1600px 0;
+            }
+        }
+        @keyframes run2{
+            100%{
+                background-position:-1360px 0;
+            }
+        }
+        @keyframes run3{
+            100%{
+                background-position:-1680px 0;
+            }
+        }
+        @keyframes go{
+            0%{
+                transform:translate(1200px,0);
+                
+            }
+            100%{
+                transform:translate(-1200px,0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 增加音乐，autoplay 自动播放  loop循环播放 controls增加控制台-->
+    <audio src="qt.mp3"   autoplay loop></audio>
+    <div class="wrapper">
+        <div class="monkey"></div>
+        <div class="pig"></div>
+        <div class="horse"></div>
+        <div class="man"></div>
+    </div>
+</body>
+</html>

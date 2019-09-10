@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .wrapper{
+            width:300px;
+            height:600px;
+            border:1px solid darkorchid;
+            margin:100px auto;
+            display:flex;
+        }
+        .wrapper>div{
+            width:100px;
+            height:100px;
+            background:cornflowerblue;
+        }
+        .wrapper>div:first-child{
+            background:firebrick;
+            flex-shrink:0;
+        }
+        .wrapper>div:nth-child(2){
+            background:darkorange;
+        }
+        .wrapper>div:nth-child(3){
+            background:darkolivegreen;
+            flex-shrink:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+</html>

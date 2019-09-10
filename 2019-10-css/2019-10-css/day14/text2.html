@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            min-width:600px;
+        }
+    .container{
+       height:500px;
+    }
+    .container>div{
+        height:100%;
+        float:left;
+    }
+    .main{
+        width:100%;
+        background:gold;
+        padding:0 200px;
+        box-sizing: border-box;
+    }
+    .inner{
+        height:100%;
+        background:cadetblue;
+    }
+    .left{
+        width:200px;
+        background:green;
+        margin-left:-100%;
+    }
+    .right{
+        width:200px;
+        background:rosybrown;
+        margin-left:-200px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="inner">inner</div>
+        </div>
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+</body>
+</html>

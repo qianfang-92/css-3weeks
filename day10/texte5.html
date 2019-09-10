@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background:black;
+        }
+        img{
+            position:fixed;
+            left:600px;
+            top:50px;
+            margin:200px auto;
+        }
+        .first{
+            animation:run 5s linear infinite;
+            opacity:0;
+
+        }
+        .second{
+            animation:run 5s linear 1.7s infinite;
+            opacity:0;
+        }
+        .third{
+            animation:run 5s linear 3.4s infinite;
+            opacity:0;
+        }
+        @keyframes run{
+            0%{
+                transform:scale(0.2);
+                opacity:0;
+                
+            }
+            50%{
+                transform:scale(2);
+                opacity:1;
+            }
+            100%{
+                transform:scale(4);
+                opacity:0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="love.png" alt="" class="first">
+    <img src="love.png" alt="" class="second">
+    <img src="love.png" alt="" class="third">
+</body>
+</html>

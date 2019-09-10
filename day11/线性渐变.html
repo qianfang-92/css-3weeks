@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width:300px;
+            height:300px;
+            /* 线性渐变 颜色至少两个，可以规定渐变的方向，从哪个方向开始渐变就写哪个方向，还可以复合，left top就是从左上角开始向右下角开始渐变
+            还可以在颜色后面加上百分比，第一个颜色的百分比是前百分之多少是纯色，第二个颜色的百分比是之后百分之多少是渐变区域，剩下的区域则是纯的第二种颜色*/
+            background:linear-gradient(left,lightgreen 10%,lightblue 60%);
+            background:-webkit-linear-gradient(left ,lightblue 10%,lightgreen 60%);
+            margin:100px auto;
+            /* 还可以写角度，就是从这个角度渐变 */
+            background:-webkit-linear-gradient(45deg,lightblue,lightgreen);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

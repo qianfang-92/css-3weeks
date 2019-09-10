@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .box{
+        width:200px;
+        height:200px;
+        background:green;
+        overflow:hidden;
+        position:relative;
+    }
+    .bottom{
+        height:30px;
+        background:pink;
+        position:absolute;
+        bottom:-30px;
+        width:100%;
+        transition:all 1s linear;
+
+    }
+    .box:hover .bottom{
+        bottom:0;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="bottom">同学们,你们都很棒！</div>
+    </div>
+</body>
+</html>
